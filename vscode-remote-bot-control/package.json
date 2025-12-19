@@ -1,0 +1,149 @@
+{
+    "name": "remote-bot-control",
+    "displayName": "Remote Bot Control",
+    "description": "Control and monitor your Solana trading bot from VS Code",
+    "version": "1.0.0",
+    "publisher": "youli-ai",
+    "icon": "media/icon.png",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "trading",
+        "bot",
+        "solana",
+        "remote",
+        "monitoring"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "remoteBotControl.connect",
+                "title": "Connect to Bot",
+                "category": "Remote Bot",
+                "icon": "$(plug)"
+            },
+            {
+                "command": "remoteBotControl.disconnect",
+                "title": "Disconnect from Bot",
+                "category": "Remote Bot",
+                "icon": "$(debug-disconnect)"
+            },
+            {
+                "command": "remoteBotControl.restart",
+                "title": "Restart Bot",
+                "category": "Remote Bot",
+                "icon": "$(debug-restart)"
+            },
+            {
+                "command": "remoteBotControl.stop",
+                "title": "Stop Bot",
+                "category": "Remote Bot",
+                "icon": "$(debug-stop)"
+            },
+            {
+                "command": "remoteBotControl.emergency",
+                "title": "Emergency Exit",
+                "category": "Remote Bot",
+                "icon": "$(warning)"
+            },
+            {
+                "command": "remoteBotControl.refreshLogs",
+                "title": "Refresh Logs",
+                "icon": "$(refresh)"
+            },
+            {
+                "command": "remoteBotControl.clearLogs",
+                "title": "Clear Logs",
+                "icon": "$(clear-all)"
+            }
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "remoteBotControl",
+                    "title": "Remote Bot Control",
+                    "icon": "media/icon.svg"
+                }
+            ]
+        },
+        "views": {
+            "remoteBotControl": [
+                {
+                    "id": "remoteBotControl.dashboard",
+                    "name": "Dashboard",
+                    "type": "webview",
+                    "icon": "$(dashboard)"
+                },
+                {
+                    "id": "remoteBotControl.logs",
+                    "name": "Logs",
+                    "icon": "$(output)"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "Remote Bot Control",
+            "properties": {
+                "remoteBotControl.serverUrl": {
+                    "type": "string",
+                    "default": "ws://localhost:3001",
+                    "description": "Bridge server WebSocket URL"
+                },
+                "remoteBotControl.apiKey": {
+                    "type": "string",
+                    "default": "",
+                    "description": "API key for authentication"
+                },
+                "remoteBotControl.autoConnect": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Automatically connect on startup"
+                },
+                "remoteBotControl.reconnectInterval": {
+                    "type": "number",
+                    "default": 5000,
+                    "description": "Reconnect interval in milliseconds"
+                }
+            }
+        },
+        "menus": {
+            "view/title": [
+                {
+                    "command": "remoteBotControl.connect",
+                    "when": "view == remoteBotControl.dashboard",
+                    "group": "navigation"
+                },
+                {
+                    "command": "remoteBotControl.refreshLogs",
+                    "when": "view == remoteBotControl.logs",
+                    "group": "navigation"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "lint": "eslint src --ext ts",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "@types/vscode": "^1.80.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "eslint": "^8.0.0",
+        "typescript": "^5.0.0",
+        "@vscode/vsce": "^2.19.0"
+    },
+    "dependencies": {
+        "ws": "^8.14.0"
+    }
+}

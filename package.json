@@ -1,15 +1,23 @@
 {
   "name": "youli-600",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "",
   "main": "sniper-bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose",
     "test:buy": "node src/instructions/testBuy.js",
     "test:sell": "node src/instructions/testSell.js",
     "build": "tsc",
     "start": "node dist/sniper-bot.js",
+    "start:testnet": "cross-env NODE_ENV=testnet ts-node src/sniper-bot.ts",
     "dev": "ts-node src/sniper-bot.ts",
+    "deploy:testnet": "powershell -ExecutionPolicy Bypass -File scripts/deploy-testnet.ps1",
+    "monitor": "ts-node scripts/monitor.ts",
+    "start:dashboard": "ts-node src/dashboard/server.ts",
+    "stop": "taskkill /F /IM node.exe /T",
     "agent:test:getPoolLayout": "ts-node src/agent/runAgentOnce.ts"
   },
   "keywords": [],
@@ -19,19 +27,33 @@
     "@pump-fun/pump-swap-sdk": "^1.11.0",
     "@solana/spl-token": "^0.4.14",
     "@solana/web3.js": "^1.95.3",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@types/express": "^5.0.6",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.18.1",
+    "binance-api-node": "^0.13.5",
     "bs58": "^6.0.0",
+    "ccxt": "^4.5.28",
     "csv-writer": "^1.6.0",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
     "https-proxy-agent": "^7.0.6",
     "node-fetch": "^3.3.2",
     "openai": "^6.9.1",
     "p-limit": "^7.2.0",
-    "winston": "^3.18.3"
+    "simple-git": "^3.30.0",
+    "telegraf": "^4.16.3",
+    "uuid": "^13.0.0",
+    "winston": "^3.18.3",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
     "@types/bn.js": "^5.2.0",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
-  
 }

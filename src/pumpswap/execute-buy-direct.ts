@@ -10,7 +10,7 @@ import {
   OnlinePumpAmmSdk,
   PUMP_AMM_SDK,
 } from "@pump-fun/pump-swap-sdk";
-import { logger } from "./logger";
+import { logger } from "../logger";
 
 export async function executeDirectBuy(
   connection: Connection,
@@ -89,8 +89,7 @@ export async function executeDirectBuy(
     return sig;
   } catch (e: any) {
     logger.error(
-      `[BUY-DIRECT] executeDirectBuy error for pool=${poolKey.toBase58()} mint=${mint.toBase58()}: ${
-        e?.message ?? e
+      `[BUY-DIRECT] executeDirectBuy error for pool=${poolKey.toBase58()} mint=${mint.toBase58()}: ${e?.message ?? e
       }`
     );
     return null;

@@ -1,0 +1,230 @@
+/* Dashboard Styles */
+
+:root {
+    --bg-primary: var(--vscode-editor-background);
+    --bg-secondary: var(--vscode-sideBar-background);
+    --text-primary: var(--vscode-editor-foreground);
+    --text-secondary: var(--vscode-descriptionForeground);
+    --border-color: var(--vscode-panel-border);
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --error-color: #f44336;
+    --info-color: #2196f3;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: var(--vscode-font-family);
+    font-size: var(--vscode-font-size);
+    color: var(--text-primary);
+    background: var(--bg-primary);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Connection Status */
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.status.connected {
+    background: rgba(76, 175, 80, 0.1);
+    border: 1px solid var(--success-color);
+}
+
+.status.disconnected {
+    background: rgba(244, 67, 54, 0.1);
+    border: 1px solid var(--error-color);
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.status.connected .status-indicator {
+    background: var(--success-color);
+    box-shadow: 0 0 8px var(--success-color);
+}
+
+.status.disconnected .status-indicator {
+    background: var(--error-color);
+}
+
+/* Panel */
+.panel {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.panel h3 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.metric-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.metric-label {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.metric-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.metric-value.positive {
+    color: var(--success-color);
+}
+
+.metric-value.negative {
+    color: var(--error-color);
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    flex: 1;
+    min-width: 100px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+}
+
+.btn-primary:hover {
+    background: var(--vscode-button-hoverBackground);
+}
+
+.btn-warning {
+    background: var(--warning-color);
+    color: white;
+}
+
+.btn-danger {
+    background: var(--error-color);
+    color: white;
+}
+
+/* Logs */
+.logs-container {
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: var(--vscode-editor-font-family);
+    font-size: 12px;
+}
+
+.log-entry {
+    display: flex;
+    gap: 8px;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.log-entry:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.log-time {
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+.log-level {
+    font-weight: 600;
+    flex-shrink: 0;
+    min-width: 50px;
+}
+
+.log-message {
+    flex: 1;
+    word-break: break-word;
+}
+
+.log-error .log-level {
+    color: var(--error-color);
+}
+
+.log-warn .log-level {
+    color: var(--warning-color);
+}
+
+.log-info .log-level {
+    color: var(--info-color);
+}
+
+.log-debug .log-level {
+    color: var(--text-secondary);
+}
+
+/* Scrollbar */
+.logs-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.logs-container::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+.logs-container::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.logs-container::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}

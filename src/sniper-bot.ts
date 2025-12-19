@@ -14,12 +14,18 @@ import { runEnhancedSecurityChecks, formatSecurityReport } from './security-chec
 import pLimit from 'p-limit';
 import bs58 from "bs58";
 import { PUMP_AMM_PROGRAM_ID, canonicalPumpPoolPda } from "@pump-fun/pump-swap-sdk";
+import { getTradeHistory } from './state/tradeHistory';
 
 // === Agent + Risk + Trading Tools ===
 import { basicRiskFilter } from "./risk/basicRiskFilter";
 import { askAgentForAction } from "./agent/agentClient";
 import { executeBuyTool } from "./agentTools/executeBuyTool";
 import { saveNewPosition } from "./state/positions";
+
+// === Unified Architecture ===
+import { UnifiedTokenDetector } from "./detection/unifiedTokenDetector";
+import { TokenValidator } from "./validation/tokenValidator";
+import { DexRouter } from "./execution/dexRouter";
 // ENV
 const RPC_URL = process.env.RPC_URL as string;
 const TRADER_PRIVATE_KEY = process.env.TRADER_PRIVATE_KEY as string;
@@ -42,6 +48,63 @@ if (!RPC_URL) {
 
 const connection = new Connection(RPC_URL, { commitment: "confirmed" });
 const limit = pLimit(5);
+const { AsyncReviewManager } = require('./agents/async/asyncReviewManager');
+
+// Initialize Async Review Manager
+const asyncReviewManager = AsyncReviewManager.getInstance();
+asyncReviewManager.initialize(connection);
+
+// === FUTURES & INTELLIGENCE INTEGRATION ===
+import { IntelligentTradingSystem } from './futures/intelligentTradingSystem';
+import { TelegramBot } from './telegram/bot';
+import { startDashboard } from './dashboard/server';
+
+const SCAN_INTERVAL = Number(process.env.SCAN_INTERVAL ?? 300000);
+const SCAN_WHITELIST = (process.env.SCAN_WHITELIST ?? '').split(',').map(s => s.trim()).filter(s => s.length > 0);
+
+// Initialize Futures System
+// Use TEST_MODE flag for dry run logic if needed, or specific env
+const futuresBot = new IntelligentTradingSystem(
+  process.env.OPENAI_API_KEY,
+  process.env.TEST_MODE !== 'false',
+  SCAN_WHITELIST
+);
+
+// Start Dashboard
+startDashboard(futuresBot);
+
+// Note: TEST_MODE=false means REAL TRADING. Default is dry run (true).
+
+// Initialize Telegram Bot (Telegraf)
+// This replaces/augments the simple sendTelegram function
+const telegramBot = new TelegramBot(
+  process.env.TELEGRAM_BOT_TOKEN ?? '',
+  process.env.RPC_URL ?? '',
+  futuresBot // Pass futures bot to telegram for control
+);
+
+// Start Telegram Bot
+if (process.env.TELEGRAM_BOT_TOKEN) {
+  telegramBot.start().then(() => {
+    logger.info('🤖 Telegram Bot Started and Listening for Commands');
+  }).catch(err => {
+    logger.error('❌ Failed to start Telegram Bot: ' + err.message);
+  });
+}
+
+// Start Auto-Scanner if enabled
+const AUTO_SCAN_ENABLED = (process.env.AUTO_SCAN_ENABLED ?? 'false').toLowerCase() === 'true';
+
+if (AUTO_SCAN_ENABLED) {
+  logger.info(`🚀 Auto-Scanner Enabled via ENV. Starting with ${SCAN_INTERVAL / 1000}s interval...`);
+  futuresBot.startAutonmousMode(SCAN_INTERVAL);
+  futuresBot.initialize(); // Also init the system resources
+}
+
+// Initialize unified architecture components
+const unifiedDetector = new UnifiedTokenDetector(connection);
+const tokenValidator = new TokenValidator(connection);
+let dexRouter: DexRouter | null = null; // Will be initialized after keypair is loaded
 
 type TokenMetadata = {
   name: string;
@@ -540,8 +603,8 @@ async function handleLogNotification(logInfo: any, source: string) {
      */
     const createPool = findCreatePoolInstruction(parsedTx);
     if (!createPool) {
-        logger.info(`[SKIP] Not a create_pool event → ignoring`);
-        return;
+      logger.info(`[SKIP] Not a create_pool event → ignoring`);
+      return;
     }
 
     const info = await extractTransactionInfo(parsedTx, connection);
@@ -603,7 +666,7 @@ async function handleLogNotification(logInfo: any, source: string) {
       const canonicalStr = canonicalPool.toBase58();
 
       const isPumpfunPool = (canonicalStr === info.poolAddress);
-            // مقادیر لازم برای Risk و Agent را از داده‌های موجود می‌سازیم
+      // مقادیر لازم برای Risk و Agent را از داده‌های موجود می‌سازیم
 
       // سازنده توکن – این فیلد را با توجه به ساختار info خودت اصلاح کن
       const raw = info as any;
@@ -613,7 +676,7 @@ async function handleLogNotification(logInfo: any, source: string) {
       const tokenDecimals: number = (tokenMetadata.decimals as number) ?? 9;
 
       // زمان ایجاد pool – اگر blockTime در info هست از آن استفاده کن
-      const poolCreationMs = (raw.blockTime ?? (Date.now()/1000)) * 1000;
+      const poolCreationMs = (raw.blockTime ?? (Date.now() / 1000)) * 1000;
 
 
       // نقدینگی بر اساس همان چیزی که بالا حساب کردی
@@ -633,88 +696,88 @@ async function handleLogNotification(logInfo: any, source: string) {
       // ------------------------------------------
       // 🔥 مسیر دوحالته دقیقاً همینجاست
       // ------------------------------------------
-     if (isPumpfunPool) {
-          logger.info(`[BUY] pumpfun-style detected → TEMPORARILY DISABLED`);
-          return;
+      if (isPumpfunPool) {
+        logger.info(`[BUY] pumpfun-style detected → TEMPORARILY DISABLED`);
+        return;
       } else {
 
-          logger.info(`[BUY] Direct PumpSwap detected → Passing through Risk Filter...`);
+        logger.info(`[BUY] Direct PumpSwap detected → Passing through Risk Filter...`);
 
-          // 1) مرحله اول: سخت‌گیرانه‌ترین فیلتر ریسک
-          const risk = await basicRiskFilter({
-              pool: poolPubkey.toBase58(),
-              baseMint: mintPubkey.toBase58(),
-              quoteMint: QUOTE_MINT_WSOL,
-              coinCreator: coinCreatorAddress,
-              liquidityUsd: poolLiquidityInfo?.liquidityUsd ?? 0,
-              recentBuyers: recentBuyers,
-              ageMs: Date.now() - poolCreationMs,
-              decimals: tokenDecimals,
-          });
+        // 1) مرحله اول: سخت‌گیرانه‌ترین فیلتر ریسک
+        const risk = await basicRiskFilter({
+          pool: poolPubkey.toBase58(),
+          baseMint: mintPubkey.toBase58(),
+          quoteMint: QUOTE_MINT_WSOL,
+          coinCreator: coinCreatorAddress,
+          liquidityUsd: poolLiquidityInfo?.liquidityUsd ?? 0,
+          recentBuyers: recentBuyers,
+          ageMs: Date.now() - poolCreationMs,
+          decimals: tokenDecimals,
+        });
 
-          if (!risk.approved) {
-              logger.warn(`[RISK] REJECTED → ${risk.reason}`);
-              return;
-          }
+        if (!risk.approved) {
+          logger.warn(`[RISK] REJECTED → ${risk.reason}`);
+          return;
+        }
 
-          logger.info(`[RISK] Approved → Handing decision to Agent...`);
+        logger.info(`[RISK] Approved → Handing decision to Agent...`);
 
-          // 2) مرحله دوم: Agent تصمیم می‌گیرد که بخریم یا نه
-          const agentDecision = await askAgentForAction({
-              type: "NEW_POOL",
-              pool: poolPubkey.toBase58(),
-              baseMint: mintPubkey.toBase58(),
-              quoteMint: QUOTE_MINT_WSOL,
-              coinCreator: coinCreatorAddress,
-              liquidityUsd: poolLiquidityInfo?.liquidityUsd ?? 0,
-              recentBuyers: recentBuyers,
-              ageMs: Date.now() - poolCreationMs,
-              fdv: fdvEstimate,
-          });
+        // 2) مرحله دوم: Agent تصمیم می‌گیرد که بخریم یا نه
+        const agentDecision = await askAgentForAction({
+          type: "NEW_POOL",
+          pool: poolPubkey.toBase58(),
+          baseMint: mintPubkey.toBase58(),
+          quoteMint: QUOTE_MINT_WSOL,
+          coinCreator: coinCreatorAddress,
+          liquidityUsd: poolLiquidityInfo?.liquidityUsd ?? 0,
+          recentBuyers: recentBuyers,
+          ageMs: Date.now() - poolCreationMs,
+          fdv: fdvEstimate,
+        });
 
-          if (agentDecision.action !== "BUY") {
-              logger.warn(`[AGENT] Rejected BUY → ${agentDecision.reason}`);
-              return;
-          }
+        if (agentDecision.action !== "BUY") {
+          logger.warn(`[AGENT] Rejected BUY → ${agentDecision.reason}`);
+          return;
+        }
 
-          logger.info(`[AGENT] Approved BUY → amount: ${agentDecision.amountInLamports}`);
+        logger.info(`[AGENT] Approved BUY → amount: ${agentDecision.amountInLamports}`);
 
-          // 3) مرحله سوم: اجرای خرید واقعی با Tool
-          const buyResult = await executeBuyTool({
-              rpcUrl: RPC_URL,
-              pool: poolPubkey.toBase58(),
-              baseMint: mintPubkey.toBase58(),
-              quoteMint: QUOTE_MINT_WSOL,
-              userSecret: TRADER_PRIVATE_KEY,
-              amountIn: agentDecision.amountInLamports,
-              prioritize: true,
-          });
+        // 3) مرحله سوم: اجرای خرید واقعی با Tool
+        const buyResult = await executeBuyTool({
+          rpcUrl: RPC_URL,
+          pool: poolPubkey.toBase58(),
+          baseMint: mintPubkey.toBase58(),
+          quoteMint: QUOTE_MINT_WSOL,
+          userSecret: TRADER_PRIVATE_KEY,
+          amountIn: agentDecision.amountInLamports,
+          prioritize: true,
+        });
 
-          buySig = buyResult.signature;
+        buySig = buyResult.signature;
 
 
-          if (!buySig) {
-              logger.error(`[ERROR] executeBuyTool did not return signature`);
-              return;
-          }
+        if (!buySig) {
+          logger.error(`[ERROR] executeBuyTool did not return signature`);
+          return;
+        }
 
-          logger.info(`[BUY] SUCCESS — Signature: ${buySig}`);
+        logger.info(`[BUY] SUCCESS — Signature: ${buySig}`);
 
-          // 4) مرحله چهارم: ذخیره پوزیشن برای Auto-Sell
+        // 4) مرحله چهارم: ذخیره پوزیشن برای Auto-Sell
 
-          const buyPriceInQuote = priceMonitor.getCurrentPrice(mintPubkey.toBase58()) ?? 0;
+        const buyPriceInQuote = priceMonitor.getCurrentPrice(mintPubkey.toBase58()) ?? 0;
 
-          const pos = saveNewPosition({
-            pool: poolPubkey.toBase58(),
-            baseMint: mintPubkey.toBase58(),
-            quoteMint: QUOTE_MINT_WSOL,
-            buySignature: buySig,
-            buyAmountLamports: agentDecision.amountInLamports,
-            buyPriceInQuote,
-            tpPercent: agentDecision.tpPercent,
-            slPercent: agentDecision.slPercent,
-            openedAt: Date.now(),
-          });
+        const pos = saveNewPosition({
+          pool: poolPubkey.toBase58(),
+          baseMint: mintPubkey.toBase58(),
+          quoteMint: QUOTE_MINT_WSOL,
+          buySignature: buySig,
+          buyAmountLamports: agentDecision.amountInLamports,
+          buyPriceInQuote,
+          tpPercent: agentDecision.tpPercent,
+          slPercent: agentDecision.slPercent,
+          openedAt: Date.now(),
+        });
       }
 
 
@@ -725,47 +788,47 @@ async function handleLogNotification(logInfo: any, source: string) {
       // 🔍 VERIFY — مشترک برای هر دو مدل launch
       // ------------------------------------------
       const verifyRes = await verifyBuyTransaction(
-          connection,
-          buySig,
-          keypair.publicKey,
-          newPoolTokenMint,
-          BUY_AMOUNT_SOL
+        connection,
+        buySig,
+        keypair.publicKey,
+        newPoolTokenMint,
+        BUY_AMOUNT_SOL
       );
 
       if (!verifyRes.success) {
-          logger.warn(`[BUY] Verification failed for ${newPoolTokenMint}`);
-          return;
+        logger.warn(`[BUY] Verification failed for ${newPoolTokenMint}`);
+        return;
       }
 
       // ------------------------------------------
       // 📈 آغاز مانیتور کردن وضعیت توکن
       // ------------------------------------------
       await startStrategyMonitor(
-          newPoolTokenMint,
-          verifyRes.purchasePrice,
-          verifyRes.tokenAmount,
-          tokenMetadata.symbol,
-          tokenMetadata.decimals,
-          buySig
+        newPoolTokenMint,
+        verifyRes.purchasePrice,
+        verifyRes.tokenAmount,
+        tokenMetadata.symbol,
+        tokenMetadata.decimals,
+        buySig
       );
 
       // ------------------------------------------
       // 🧾 لاگ زدن برای تست
       // ------------------------------------------
       await logTestResult({
-          symbol: tokenMetadata.symbol,
-          tokenMint: newPoolTokenMint,
-          entryTime: new Date().toISOString(),
-          buyPrice: verifyRes.purchasePrice,
-          entryLiquidity: totalLiquidityUSD,
-          solPrice,
-          exitTime: '',
-          sellPrice: 0,
-          exitLiquidity: 0,
-          exitReason: '',
-          removeLiqTime: '',
+        symbol: tokenMetadata.symbol,
+        tokenMint: newPoolTokenMint,
+        entryTime: new Date().toISOString(),
+        buyPrice: verifyRes.purchasePrice,
+        entryLiquidity: totalLiquidityUSD,
+        solPrice,
+        exitTime: '',
+        sellPrice: 0,
+        exitLiquidity: 0,
+        exitReason: '',
+        removeLiqTime: '',
       });
-  }
+    }
 
   } catch (e: any) {
     logger.error(`[ERROR] handleLogNotification: ${e?.message ?? e}`);

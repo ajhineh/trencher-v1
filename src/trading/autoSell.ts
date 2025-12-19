@@ -2,7 +2,7 @@
 import { executeSellTool } from "../agentTools/executeSellTool";
 import { getOpenPositions, closePosition } from "../state/positions";
 import { QUOTE_MINT_WSOL } from "../constants/tokenAddresses";
-import logger from "../logger";
+import { logger } from "../logger";
 
 const RPC_URL = process.env.RPC_URL as string;
 const TRADER_PRIVATE_KEY = process.env.TRADER_PRIVATE_KEY as string;
@@ -48,7 +48,7 @@ export async function handlePriceUpdate(event: {
 }
 
 async function triggerSell(
-  pos,
+  pos: any,
   currentPriceInQuote: number,
   reason: "TP" | "SL",
 ) {

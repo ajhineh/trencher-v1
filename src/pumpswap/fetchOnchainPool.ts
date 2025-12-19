@@ -1,7 +1,8 @@
 // src/fetchOnchainPool.ts
 import { Connection, PublicKey } from "@solana/web3.js";
 import { AnchorProvider, Idl, Program } from "@coral-xyz/anchor";
-import pumpAmmIdl from "./pump_amm.json"; // مسیر را با پروژه خودت هماهنگ کن
+// استفاده از require به جای import برای فایل JSON
+const pumpAmmIdl = require("@pump-fun/pump-swap-sdk/src/idl/pump_amm.json");
 import {
   PUMP_AMM_PROGRAM_ID,
   globalConfigPda,
@@ -31,7 +32,6 @@ export function getPumpAmmProgram(connection: Connection): PumpAmmProgram {
 
   const program = new Program(
     pumpAmmIdl as Idl,
-    PUMP_AMM_PROGRAM_ID,
     provider,
   );
 
@@ -56,24 +56,24 @@ export async function fetchPoolWithConfig(
   const program = getPumpAmmProgram(connection);
 
   // Pool
-  const pool = await program.account.pool.fetch(poolPubkey);
+  const pool = await (program.account as any).pool.fetch(poolPubkey);
 
   // GlobalConfig
   const [globalConfigPubkey] = globalConfigPda();
-  const globalConfig = await program.account.globalConfig.fetch(
+  const globalConfig = await (program.account as any).globalConfig.fetch(
     globalConfigPubkey,
   );
 
   // FeeConfig
   const [feeConfigPubkey] = feeConfigPda();
-  const feeConfig = await program.account.feeConfig.fetch(feeConfigPubkey);
+  const feeConfig = await (program.account as any).feeConfig.fetch(feeConfigPubkey);
 
   // GlobalVolumeAccumulator (ممکنه وجود نداشته باشد)
   const [globalVolumeAccumulatorPubkey] = globalVolumeAccumulatorPda();
   let globalVolumeAccumulator: any | null = null;
   try {
     globalVolumeAccumulator =
-      await program.account.globalVolumeAccumulator.fetch(
+      await (program.account as any).globalVolumeAccumulator.fetch(
         globalVolumeAccumulatorPubkey,
       );
   } catch {
