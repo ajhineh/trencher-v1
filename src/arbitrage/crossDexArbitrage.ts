@@ -248,7 +248,7 @@ export class CrossDEXArbitrage {
                     quoteMint: "So11111111111111111111111111111111111111112",
                     baseReserve: 0,
                     quoteReserve: 0,
-                    liquidityUsd: parseFloat(opportunity.liquidity) || 0
+                    liquidityUsd: parseFloat(opportunity.liquidity || '0') || 0
                 },
                 metadata: {
                     name: "Unknown",
