@@ -367,10 +367,10 @@ export class BridgeServer {
      * Start server
      */
     start() {
-        this.httpServer.listen(this.config.port, () => {
+        this.httpServer.listen(this.config.port, '0.0.0.0', () => {
             logger.info(`🌉 Bridge Server started on port ${this.config.port}`);
-            logger.info(`   WebSocket: ws://localhost:${this.config.port}`);
-            logger.info(`   HTTP API: http://localhost:${this.config.port}/api`);
+            logger.info(`   WebSocket: ws://0.0.0.0:${this.config.port}`);
+            logger.info(`   HTTP API: http://0.0.0.0:${this.config.port}/api`);
         });
     }
 
