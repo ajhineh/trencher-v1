@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Sniper | Ultimate Control Center</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;500&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00f2ff;
+            --secondary: #ff00ea;
+            --lemon: #d4ff00;
+            --danger: #ff8800;
+            --success: #00ff64;
+            --bg: #050505;
+            --card-bg: rgba(18, 18, 22, 0.85);
+            --border-color: rgba(0, 242, 255, 0.15);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            /* Enhanced Background: Radial glow + Deep space */
+            background: radial-gradient(circle at 50% 100%, #15082e 0%, #050505 100%);
+        }
+
+        /* ------------------ Background ------------------ */
+        .cyber-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .neon-grid {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background-image:
+                linear-gradient(rgba(0, 242, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 242, 255, 0.1) 1px, transparent 1px);
+            background-size: 60px 60px;
+            top: -50%;
+            left: -50%;
+            transform: perspective(1000px) rotateX(60deg);
+            opacity: 0.25;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            from {
+                transform: perspective(1000px) rotateX(60deg) translateY(0);
+            }
+
+            to {
+                transform: perspective(1000px) rotateX(60deg) translateY(60px);
+            }
+        }
+
+        header {
+            padding: 12px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary);
+            text-shadow: 0 0 15px var(--primary);
+            letter-spacing: 2px;
+        }
+
+        .top-row {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr 1fr;
+            gap: 20px;
+            padding: 20px 40px;
+        }
+
+        .middle-stats {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background: rgba(0, 0, 0, 0.4);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 40px;
+            margin-bottom: 15px;
+        }
+
+        /* Height increased by 30%: 380px -> 500px */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.85fr 1.05fr;
+            gap: 20px;
+            padding: 0 40px;
+            height: 500px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 15px;
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: inset 0 0 20px rgba(0, 242, 255, 0.05);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary), var(--secondary), transparent);
+        }
+
+        .card-header {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 12px;
+            letter-spacing: 1.5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .uptime-val {
+            font-family: 'Orbitron';
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .latency-val {
+            font-family: 'Orbitron';
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+            text-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+        }
+
+        /* Uptime & Clock - side by side layout */
+        #uptime-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .local-time {
+            font-size: 14px;
+            color: var(--primary);
+            font-family: 'Orbitron';
+            letter-spacing: 1px;
+        }
+
+        /* DEX Toggles in Health Card - Horizontal */
+        .dex-toggles {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .dex-toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            font-family: 'Orbitron';
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        .dex-toggle input {
+            accent-color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        /* Logs - Mono Font */
+        .log-list {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            flex: 1;
+            overflow-y: hidden;
+        }
+
+        .log-row {
+            display: grid;
+            grid-template-columns: 100px 90px 100px 40px 1fr;
+            padding: 7px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            transition: opacity 0.3s;
+        }
+
+        .log-row.dimmed {
+            opacity: 0.35;
+        }
+
+        .log-row.REJECT {
+            color: var(--danger);
+        }
+
+        .log-row.APPROVED {
+            color: var(--success);
+        }
+
+        .log-row.WARNING {
+            color: #888;
+            /* Light charcoal/grey for bypassed security */
+        }
+
+        .log-footer {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .log-footer input {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 4px 10px;
+            width: 80px;
+            font-family: 'Orbitron';
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Security Analysis - Mono Font */
+        .security-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .security-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* 12.5px * 1.25 = 15.6px */
+            font-size: 15.6px;
+        }
+
+        .security-item-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .security-item input {
+            accent-color: var(--secondary);
+            transform: scale(1.1);
+        }
+
+        #user-bin,
+        #sys-bin {
+            transition: opacity 0.3s;
+        }
+
+        #user-bin.dimmed,
+        #sys-bin.dimmed {
+            opacity: 0.4;
+        }
+
+        .stat-box {
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 4px;
+            font-family: 'Orbitron';
+        }
+
+        .stat-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: var(--lemon);
+            text-shadow: 0 0 10px rgba(212, 255, 0, 0.5);
+        }
+
+        /* Blinking / Modified */
+        .modified {
+            animation: neonPulse 0.5s infinite alternate;
+        }
+
+        @keyframes neonPulse {
+            0% {
+                box-shadow: 0 0 2px var(--primary);
+                filter: brightness(1);
+            }
+
+            100% {
+                box-shadow: 0 0 15px var(--secondary);
+                filter: brightness(1.5);
+            }
+        }
+
+        .btn-set {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-family: 'Orbitron';
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-set:hover {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        .status-btn {
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-family: 'Orbitron';
+            font-weight: 700;
+            transition: 0.4s;
+            letter-spacing: 1px;
+        }
+
+        .status-online {
+            background: rgba(0, 255, 100, 0.1);
+            color: #00ff64;
+            border: 1px solid #00ff64;
+        }
+
+        .status-offline {
+            background: rgba(255, 0, 0, 0.2);
+            color: #ff3e3e;
+            border: 1px solid #ff3e3e;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .trade-row {
+            background: rgba(0, 242, 255, 0.03);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.3);
+            font-family: 'Orbitron';
+            letter-spacing: 3px;
+        }
+
+        .bypass-btn {
+            margin-top: 10px;
+            background: rgba(255, 0, 234, 0.05);
+            border: 1px solid rgba(255, 0, 234, 0.3);
+            color: var(--secondary);
+            width: 100%;
+            padding: 6px;
+            border-radius: 5px;
+            font-family: 'Orbitron';
+            font-size: 11px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .bypass-btn.active {
+            background: var(--secondary);
+            color: #000;
+            box-shadow: 0 0 15px var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cyber-bg">
+        <div class="neon-grid"></div>
+    </div>
+
+    <header>
+        <div class="logo">EAGLE SNIPER V7.1.2</div>
+        <div style="display:flex; align-items:center; gap:15px">
+            <button id="set-btn" class="btn-set" onclick="applySettings()">SET</button>
+            <button id="terminate-btn" class="btn-set"
+                style="background:rgba(255,0,0,0.1); border:1px solid #ff3e3e; color:#ff3e3e"
+                onclick="triggerTerminate()">TERMINATE</button>
+            <div id="sys-status" class="status-btn status-online">SYSTEM ONLINE</div>
+        </div>
+    </header>
+
+    <div class="top-row">
+        <div class="card">
+            <div class="card-header">UPTIME & LOCAL TIME</div>
+            <div id="uptime-display">
+                <div class="uptime-val" id="uptime-val">--</div>
+                <div class="local-time" id="local-time">--:--:--</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">DETECTION LATENCY</div>
+            <div class="latency-val" id="latency-val">-- ms</div>
+        </div>
+        <div class="card">
+            <div class="card-header">DEX HEALTH & CONFIG</div>
+            <div style="font-size: 11px; font-family:'Orbitron'; color: var(--primary)">
+                PUMP: <span style="color:var(--success)">OK</span> | PS: <span style="color:var(--success)">OK</span> |
+                MET: <span style="color:var(--success)">OK</span>
+            </div>
+            <div class="dex-toggles">
+                <label class="dex-toggle"><input type="checkbox" id="toggle-pumpfun" checked
+                        onchange="markModified(this)"> PUMP.FUN</label>
+                <label class="dex-toggle"><input type="checkbox" id="toggle-pumpswap" checked
+                        onchange="markModified(this)"> PUMPSWAP</label>
+                <label class="dex-toggle"><input type="checkbox" id="toggle-meteora" checked
+                        onchange="markModified(this)"> METEORA</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle-stats">
+        <div class="stat-box">
+            <div class="stat-label">WIN RATE</div>
+            <div class="stat-value" id="winrate-val">0.0%</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">TOTAL TRADES</div>
+            <div class="stat-value" id="trades-count">0</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">AVG CAPITAL</div>
+            <div class="stat-value" id="avg-cap">0.00 SOL</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">TAKE PROFITS</div>
+            <div class="stat-value" id="tp-count">0</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">TOTAL PNL</div>
+            <div class="stat-value" id="total-pnl">0.00 SOL</div>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div class="card">
+            <div class="card-header">LIVE EVENT STREAM</div>
+            <div class="log-container">
+                <div
+                    style="display:grid; grid-template-columns:100px 90px 100px 40px 1fr; font-size:11px; color:var(--primary); font-weight:bold; padding-bottom:8px; border-bottom:1px solid rgba(0, 242, 255, 0.2)">
+                    <span>TIME</span><span>TOKEN</span><span>NETWORK</span><span>LINK</span><span>RESULT/REASON</span>
+                </div>
+                <div class="log-list" id="log-content"></div>
+                <div class="log-footer">
+                    <span style="font-size:11px; opacity:0.7; font-family:'Orbitron'; color:var(--primary)">Min
+                        Liquidity (SOL)</span>
+                    <input type="number" id="min-liq-sol" value="" onchange="markModified(this)">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="security-card">
+            <div class="card-header">🛡️ SECURITY ANALYSIS (LomVinCdfs)</div>
+            <div class="security-list" id="security-detail">
+                <div style="text-align:center; padding-top:100px; opacity:0.2; font-family:'Orbitron'">WAITING FOR
+                    TOKEN...</div>
+            </div>
+
+            <button id="bypass-security-btn" class="bypass-btn" onclick="toggleBypassSecurity()">BYPASS SECURITY:
+                OFF</button>
+
+            <div
+                style="font-size:10px; border-top:1px solid rgba(255,255,255,0.1); padding-top:10px; display:flex; justify-content:space-between; font-family:'JetBrains Mono'; opacity:0.8">
+                <span>USR_BIN: <span id="user-bin" style="color:var(--primary)">--</span></span>
+                <span>SYS_BIN: <span id="sys-bin" style="color:var(--lemon)">--</span></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">ACTIVE POSITIONS</div>
+            <div id="trades-content" style="flex:1">
+                <div style="text-align:center; padding-top:100px; opacity:0.2; font-family:'Orbitron'">NO ACTIVE TRADES
+                </div>
+            </div>
+            <button id="emergency-btn" class="btn-set"
+                style="width:100%; margin-top:15px; background:rgba(255,0,0,0.05); border:1px solid rgba(255,0,0,0.3); color:#ff3e3e"
+                onclick="triggerEmergencyExit()">EMERGENCY EXIT ALL</button>
+        </div>
+    </div>
+
+    <div class="footer">POWERED BY ADVANCED AGENTIC CODING | VERSION 7.2.1</div>
+
+    <script>
+        let lastSecUpdate = 0;
+        let modifiedTimers = {};
+        let currentSettings = {
+            toggles: { pumpfun: true, pumpswap: true, meteora: true },
+            security: { L: true, o: true, m: true, V: true, i: true, n: true, C: true, d: true, f: true, s: true },
+            minLiq: 0, // Will be updated from server state
+            bypassSecurity: false
+        };
+        let activeTradesCount = 0;
+        let emergencyMode = 'idle'; // idle, confirming
+        let terminateMode = 'idle'; // idle, confirming
+
+        function markModified(el) {
+            el.closest('label')?.classList.add('modified');
+            el.classList.add('modified');
+            const id = el.id;
+            if (modifiedTimers[id]) clearTimeout(modifiedTimers[id]);
+            modifiedTimers[id] = setTimeout(() => revertElement(el), 5000);
+        }
+
+        function revertElement(el) {
+            el.closest('label')?.classList.remove('modified');
+            el.classList.remove('modified');
+            delete modifiedTimers[el.id];
+            if (el.type === 'checkbox') {
+                const key = el.id.replace('toggle-', '').replace('sec-', '');
+                if (currentSettings.toggles[key] !== undefined) el.checked = currentSettings.toggles[key];
+                else if (currentSettings.security[key] !== undefined) el.checked = currentSettings.security[key];
+            } else if (el.id === 'min-liq-sol') {
+                el.value = currentSettings.minLiq;
+            }
+        }
+
+        function toggleBypassSecurity() {
+            const btn = document.getElementById('bypass-security-btn');
+            btn.classList.toggle('active');
+            const isActive = btn.classList.contains('active');
+            btn.innerText = `BYPASS SECURITY: ${isActive ? 'ON' : 'OFF'}`;
+
+            const setBtn = document.getElementById('set-btn');
+            setBtn.classList.add('modified');
+
+            if (modifiedTimers['bypass']) clearTimeout(modifiedTimers['bypass']);
+            modifiedTimers['bypass'] = setTimeout(() => {
+                const wasActive = currentSettings.bypassSecurity;
+                btn.className = `bypass-btn ${wasActive ? 'active' : ''}`;
+                btn.innerText = `BYPASS SECURITY: ${wasActive ? 'ON' : 'OFF'}`;
+                setBtn.classList.remove('modified');
+            }, 5000);
+        }
+
+        function triggerEmergencyExit() {
+            const btn = document.getElementById('emergency-btn');
+            // Reset Terminate mode if active
+            if (terminateMode !== 'idle') {
+                resetTerminateMode();
+            }
+
+            if (activeTradesCount === 0) {
+                const originalText = btn.innerText;
+                btn.innerText = "No exist active trades";
+                setTimeout(() => { btn.innerText = originalText; }, 5000);
+            } else {
+                if (emergencyMode === 'idle') {
+                    emergencyMode = 'confirming';
+                    btn.innerText = "EXIT CURRENT TRADES";
+                    const setBtn = document.getElementById('set-btn');
+                    setBtn.classList.add('modified');
+                }
+            }
+        }
+
+        function triggerTerminate() {
+            const btn = document.getElementById('terminate-btn');
+            const setBtn = document.getElementById('set-btn');
+
+            // Reset Emergency mode if active
+            if (emergencyMode !== 'idle') {
+                document.getElementById('emergency-btn').innerText = "EMERGENCY EXIT ALL";
+                emergencyMode = 'idle';
+            }
+
+            if (terminateMode === 'idle') {
+                terminateMode = 'confirming';
+                btn.innerText = "CONFIRM (5s)";
+                btn.style.background = "rgba(255,0,0,0.3)";
+                setBtn.classList.add('modified');
+                setBtn.innerText = "CONFIRM KILL";
+
+                if (modifiedTimers['terminate']) clearTimeout(modifiedTimers['terminate']);
+                modifiedTimers['terminate'] = setTimeout(() => {
+                    resetTerminateMode();
+                }, 5000);
+            }
+        }
+
+        function resetTerminateMode() {
+            const btn = document.getElementById('terminate-btn');
+            const setBtn = document.getElementById('set-btn');
+
+            terminateMode = 'idle';
+            btn.innerText = "TERMINATE";
+            btn.style.background = "rgba(255,0,0,0.1)";
+
+            if (emergencyMode === 'idle') {
+                setBtn.innerText = "SET";
+                setBtn.classList.remove('modified');
+            } else {
+                // Return to emergency confirming state visually if needed, though we usually mutually exclude
+                setBtn.innerText = "SET";
+                setBtn.classList.remove('modified');
+            }
+        }
+
+        async function applySettings() {
+            const setBtn = document.getElementById('set-btn');
+
+            if (emergencyMode === 'confirming') {
+                if (setBtn.innerText === "Run Mode / Set For flash mode") {
+                    // SECOND CLICK: Final Execution
+                    try {
+                        await fetch('/api/internal/exit-all', { method: 'POST' });
+                    } catch (e) { }
+
+                    setBtn.innerText = "SET";
+                    setBtn.classList.remove('modified');
+                    document.getElementById('emergency-btn').innerText = "EMERGENCY EXIT ALL";
+                    emergencyMode = 'idle';
+                    return;
+                }
+
+                // FIRST CLICK: Trigger Flash Mode
+                setBtn.innerText = "Run Mode / Set For flash mode";
+                setBtn.classList.add('modified');
+
+                setTimeout(() => {
+                    if (emergencyMode === 'confirming' && setBtn.innerText === "Run Mode / Set For flash mode") {
+                        setBtn.innerText = "SET";
+                        setBtn.classList.remove('modified');
+                        document.getElementById('emergency-btn').innerText = "EMERGENCY EXIT ALL";
+                        emergencyMode = 'idle';
+                    }
+                }, 5000);
+
+                return;
+            }
+
+            if (terminateMode === 'confirming') {
+                // User clicked SET while in Terminate Confirmation Mode
+                try {
+                    await fetch('/api/terminate', { method: 'POST' });
+                    alert("Termination Signal Sent!");
+                } catch (e) {
+                    alert("Error sending termination signal.");
+                }
+                resetTerminateMode();
+                return;
+            }
+
+            const bypassBtn = document.getElementById('bypass-security-btn');
+
+            const settings = {
+                toggles: {
+                    pumpfun: document.getElementById('toggle-pumpfun').checked,
+                    pumpswap: document.getElementById('toggle-pumpswap').checked,
+                    meteora: document.getElementById('toggle-meteora').checked
+                },
+                minLiq: parseFloat(document.getElementById('min-liq-sol').value),
+                security: {},
+                bypassSecurity: bypassBtn.classList.contains('active')
+            };
+            ['L', 'o', 'm', 'V', 'i', 'n', 'C', 'd', 'f', 's'].forEach(tag => {
+                const el = document.getElementById('sec-' + tag);
+                settings.security[tag] = el ? el.checked : true;
+            });
+
+            document.querySelectorAll('.modified').forEach(el => el.classList.remove('modified'));
+            Object.values(modifiedTimers).forEach(t => clearTimeout(t));
+            modifiedTimers = {};
+            currentSettings = settings;
+
+            // Sync dimmed state for binary display
+            updateBinaryDimming();
+
+            try {
+                await fetch('/api/settings', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(settings)
+                });
+            } catch (e) { console.error("Failed to save settings", e); }
+        }
+
+        function updateBinaryDimming() {
+            const userBin = document.getElementById('user-bin');
+            const sysBin = document.getElementById('sys-bin');
+            if (currentSettings.bypassSecurity) {
+                userBin.classList.add('dimmed');
+                sysBin.classList.add('dimmed');
+            } else {
+                userBin.classList.remove('dimmed');
+                sysBin.classList.remove('dimmed');
+            }
+        }
+
+        function formatUptime(seconds) {
+            const d = Math.floor(seconds / (3600 * 24));
+            const h = Math.floor(seconds % (3600 * 24) / 3600);
+            const m = Math.floor(seconds % 3600 / 60);
+            const s = Math.floor(seconds % 60);
+            return `${d} Day - ${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        async function update() {
+            try {
+                const res = await fetch('/api/state');
+                const state = await res.json();
+
+                activeTradesCount = state.trades.length;
+
+                const statusBtn = document.getElementById('sys-status');
+                statusBtn.innerText = "SYSTEM ONLINE";
+                statusBtn.className = "status-btn status-online";
+
+                // Sync minLiq from server if not modifying
+                if (!document.getElementById('min-liq-sol').classList.contains('modified')) {
+                    document.getElementById('min-liq-sol').value = state.settings.minLiq;
+                    currentSettings.minLiq = state.settings.minLiq;
+                }
+
+                document.getElementById('uptime-val').innerText = formatUptime(state.health.uptime);
+                document.getElementById('local-time').innerText = new Date().toLocaleTimeString();
+
+                let latTotal = 0, count = 0;
+                for (let k in state.performance) { latTotal += state.performance[k].avg; count++; }
+                // Display in milliseconds
+                document.getElementById('latency-val').innerText = count > 0 ? (latTotal / count).toFixed(0) + ' ms' : '-- ms';
+
+                document.getElementById('log-content').innerHTML = state.logs
+                    .filter(l => l.status !== 'SKIP' && !l.reason.includes('create_pool'))
+                    .slice(0, 10).map(l => {
+                        const netKey = l.network.toLowerCase().replace('.', '');
+                        const isDimmed = currentSettings.toggles[netKey] === false;
+                        const linkHtml = l.mint ? `<a href="https://dexscreener.com/solana/${l.mint}" target="_blank" style="text-decoration:none; color:var(--secondary)">🔗</a>` : '<span>-</span>';
+                        return `
+                        <div class="log-row ${l.status} ${isDimmed ? 'dimmed' : ''}">
+                            <span>${l.time}</span>
+                            <span style="color:var(--primary); font-weight:bold">${l.token}</span>
+                            <span>${l.network}</span>
+                            <span>${linkHtml}</span>
+                            <span style="opacity:0.9">${l.reason}</span>
+                        </div>
+                    `}).join('');
+
+                if (state.security && state.security.timestamp > lastSecUpdate) {
+                    lastSecUpdate = state.security.timestamp;
+                    const sec = state.security;
+                    const labels = { L: 'Liquidity OK', o: 'Open Source', m: 'Mint Locked', V: 'Verified Creator', i: 'Immutable', n: 'No Transfer Fee', C: 'Creator Safe', d: 'Distribution OK', f: 'Freeze Disabled', s: 'Supply OK' };
+                    const mapping = { L: sec.details.liquidityAnalysis, o: sec.details.hasOpenSource, m: sec.details.canMintMore, V: sec.details.hasVerifiedCreator, i: sec.details.isMutable === false, n: sec.details.transferFeeAnalysis, C: sec.details.creatorAnalysis, d: sec.details.distributionAnalysis, f: sec.details.hasFreezeAuthority === false, s: sec.details.supplyAnalysis };
+
+                    let html = `<div style="text-align:center; margin-bottom:15px">
+                        <div style="font-size:18px; font-weight:bold; font-family:'Orbitron'; color:#fff">${sec.symbol}</div>
+                        <div style="color:${sec.status === 'SAFE' ? 'var(--success)' : 'var(--danger)'}; font-size:11px; font-family:'Orbitron'; margin-top:4px">STATUS: ${sec.status} | RISK: ${sec.riskScore}</div>
+                    </div>`;
+                    html += ['L', 'o', 'm', 'V', 'i', 'n', 'C', 'd', 'f', 's'].map(tag => `
+                        <div class="security-item">
+                            <div class="security-item-left">
+                                <input type="checkbox" id="sec-${tag}" ${currentSettings.security[tag] ? 'checked' : ''} onchange="markModified(this)">
+                                <span style="font-family:'JetBrains Mono'; color:rgba(255,255,255,0.7)">${labels[tag]}</span>
+                            </div>
+                            <span>${mapping[tag] ? '✅' : '❌'}</span>
+                        </div>
+                    `).join('');
+                    document.getElementById('security-detail').innerHTML = html;
+                    document.getElementById('user-bin').innerText = ['L', 'o', 'm', 'V', 'i', 'n', 'C', 'd', 'f', 's'].map(t => currentSettings.security[t] ? '1' : '0').join('');
+                    document.getElementById('sys-bin').innerText = '1' + ['L', 'o', 'm', 'V', 'i', 'n', 'C', 'd', 'f', 's'].map(t => mapping[t] ? '1' : '0').join('');
+                    updateBinaryDimming();
+                }
+
+                document.getElementById('winrate-val').innerText = state.stats.winRate.toFixed(1) + '%';
+                document.getElementById('trades-count').innerText = state.stats.totalTrades;
+                document.getElementById('avg-cap').innerText = state.stats.avgCapital.toFixed(2) + ' SOL';
+                document.getElementById('tp-count').innerText = state.stats.takeProfitCount;
+                document.getElementById('total-pnl').innerText = state.stats.totalPnL.toFixed(2) + ' SOL';
+
+                if (state.trades.length > 0) {
+                    document.getElementById('trades-content').innerHTML = state.trades.slice(0, 4).map(t => `
+                        <div class="trade-row">
+                            <div style="display:flex; justify-content:space-between; font-family:'Orbitron'; font-size:13px">
+                                <span>${t.symbol}</span><span style="color:var(--success)">+${t.tp}%</span>
+                            </div>
+                            <div style="font-size:10px; margin-top:5px; opacity:0.6; font-family:'JetBrains Mono'">Entry: ${t.buyPrice.toFixed(8)} | Val: ${t.amount} SOL</div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('trades-content').innerHTML = `<div style="text-align:center; padding-top:100px; opacity:0.2; font-family:'Orbitron'">NO ACTIVE TRADES</div>`;
+                }
+            } catch (e) {
+                const statusBtn = document.getElementById('sys-status');
+                statusBtn.innerText = "SYSTEM OFFLINE";
+                statusBtn.className = "status-btn status-offline";
+            }
+        }
+        setInterval(update, 1000); update();
+    </script>
+</body>
+
+</html>

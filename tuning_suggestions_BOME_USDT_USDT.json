@@ -1,0 +1,18 @@
+{
+  "symbol": "BOME/USDT:USDT",
+  "generatedAt": "2026-05-25T06:15:37.858Z",
+  "tradeCount": 20,
+  "lastAnalyzedCount": 20,
+  "pending": [],
+  "informational": [
+    {
+      "category": "Risk Level",
+      "description": "Risk level VERY_LOW has very low win rate",
+      "evidence": "3 trades, win rate: 0%",
+      "winRate": 0,
+      "sampleSize": 3,
+      "suggestion": "Consider disabling VERY_LOW risk trades or reducing leverage",
+      "priority": "HIGH"
+    }
+  ]
+}

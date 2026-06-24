@@ -1,0 +1,31 @@
+{
+  "symbol": "POPCAT/USDT:USDT",
+  "generatedAt": "2026-05-23T15:37:33.459Z",
+  "tradeCount": 15,
+  "lastAnalyzedCount": 15,
+  "pending": [
+    {
+      "category": "Confidence Score",
+      "description": "High-confidence trades significantly outperform low-confidence ones",
+      "evidence": "Conf>=75: 67% win | Conf<75: 50% win",
+      "winRate": 66.66666666666666,
+      "sampleSize": 15,
+      "suggestion": "Add AMIRO_MIN_CONFIDENCE=75 to block low-confidence entries",
+      "priority": "MEDIUM",
+      "paramKey": "AMIRO_MIN_CONFIDENCE",
+      "paramValue": "75",
+      "paramCurrent": "60"
+    }
+  ],
+  "informational": [
+    {
+      "category": "Trend Alignment",
+      "description": "Full 3-timeframe alignment significantly outperforms partial alignment",
+      "evidence": "Full align: 75% vs Partial: 45% (4 vs 11 trades)",
+      "winRate": 75,
+      "sampleSize": 15,
+      "suggestion": "Consider only trading VERY_LOW risk (full 3-TF alignment)",
+      "priority": "MEDIUM"
+    }
+  ]
+}

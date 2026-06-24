@@ -23,7 +23,8 @@ import { TelegramNotifier } from './notifier';
 import { logger } from '../logger';
 import { Connection } from '@solana/web3.js';
 import { IntelligentTradingSystem } from '../futures/intelligentTradingSystem';
-import { handleScan } from './commands/scan'; // Import
+import { handleScan } from './commands/scan';
+import { handleFutures, handleFuturesStatus, handleFuturesStats, handleFuturesHelp } from './commands/futures';
 
 export class TelegramBot {
     private bot: Telegraf;
@@ -116,6 +117,26 @@ export class TelegramBot {
         // /history
         this.bot.command('history', async (ctx) => {
             await handleHistory(ctx, this.sessionManager, 1);
+        });
+
+        // /futures
+        this.bot.command('futures', async (ctx) => {
+            await handleFutures(ctx, this.sessionManager);
+        });
+
+        // /futures_status
+        this.bot.command('futures_status', async (ctx) => {
+            await handleFuturesStatus(ctx);
+        });
+
+        // /futures_stats
+        this.bot.command('futures_stats', async (ctx) => {
+            await handleFuturesStats(ctx);
+        });
+
+        // /futures_help
+        this.bot.command('futures_help', async (ctx) => {
+            await handleFuturesHelp(ctx);
         });
 
         logger.info('✅ Commands registered');
@@ -233,6 +254,27 @@ export class TelegramBot {
         this.bot.action('balance_refresh', async (ctx) => {
             await handleBalance(ctx, this.sessionManager, this.connection);
             await ctx.answerCbQuery();
+        });
+
+        // Futures callbacks
+        this.bot.action(/futures_approve:(.+)/, async (ctx) => {
+            const proposalId = ctx.match[1];
+            await ctx.answerCbQuery('✅ Trade approved!');
+            await ctx.editMessageReplyMarkup({ inline_keyboard: [] });
+            await ctx.reply(`✅ *Trade Approved*\nProposal ID: ${proposalId.slice(0, 8)}`, {
+                parse_mode: 'Markdown'
+            });
+            logger.info(`[Futures] Trade ${proposalId} approved by user`);
+        });
+
+        this.bot.action(/futures_reject:(.+)/, async (ctx) => {
+            const proposalId = ctx.match[1];
+            await ctx.answerCbQuery('❌ Trade rejected');
+            await ctx.editMessageReplyMarkup({ inline_keyboard: [] });
+            await ctx.reply(`❌ *Trade Rejected*\nProposal ID: ${proposalId.slice(0, 8)}`, {
+                parse_mode: 'Markdown'
+            });
+            logger.info(`[Futures] Trade ${proposalId} rejected by user`);
         });
 
         logger.info('✅ Callbacks registered');

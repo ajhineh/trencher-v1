@@ -2,22 +2,39 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "commonjs",
-    "lib": ["ES2020", "DOM"],
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
     "outDir": "dist",
     "rootDir": "src",
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
     "resolveJsonModule": true,
-    "allowJs": true,                 // IMPORTANT: Allows compiling .js files
-    "checkJs": false,                 // Optional: Enables type checking on .js files (recommended if you have types)
-    "sourceMap": true,               // Generates .map files (matches your built file's comment)
-    "skipLibCheck": true,            // Speeds up build by skipping type checks on .d.ts files
-    "esModuleInterop": true          // Better compatibility with CommonJS
+    "allowJs": true, // IMPORTANT: Allows compiling .js files
+    "checkJs": false, // Optional: Enables type checking on .js files (recommended if you have types)
+    "sourceMap": true, // Generates .map files (matches your built file's comment)
+    "skipLibCheck": true, // Speeds up build by skipping type checks on .d.ts files
+    "esModuleInterop": true // Better compatibility with CommonJS
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+  "include": [
+    "src/trencher.ts",
+    "src/execution/orderManager.ts",
+    "src/strategies/microTickScalper.ts",
+    "src/services/signalBroadcaster.ts",
+    "src/dashboard/server.ts",
+    "src/dashboard/dashboardBridge.ts",
+    "src/logger.ts",
+    "src/telegram.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

@@ -1,0 +1,622 @@
+{
+  "signals": [
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004468,
+      "leverage": 6,
+      "time": 1780581976,
+      "strategy": "Amiro",
+      "tp": 0.0004495125,
+      "sl": 0.0004439242857142857
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004439,
+      "time": 1780583438,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0004234,
+      "leverage": 6,
+      "time": 1780631103,
+      "strategy": "Amiro",
+      "tp": 0.00042217666666666666,
+      "sl": 0.0004254428571428571
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0004221,
+      "time": 1780631642,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0004235,
+      "time": 1780631751,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004195,
+      "leverage": 8,
+      "time": 1780658834,
+      "strategy": "Amiro",
+      "tp": 0.0004221464285714286,
+      "sl": 0.0004171114285714285
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004171,
+      "time": 1780659862,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003994,
+      "leverage": 6,
+      "time": 1780675635,
+      "strategy": "Amiro",
+      "tp": 0.00039662053571428574,
+      "sl": 0.0004027942857142857
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003964,
+      "time": 1780675701,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003951,
+      "time": 1780675753,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003969,
+      "time": 1780675781,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003981,
+      "leverage": 6,
+      "time": 1780684325,
+      "strategy": "Amiro",
+      "tp": 0.0003965392857142857,
+      "sl": 0.0004006614285714285
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003964,
+      "time": 1780684636,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003957,
+      "time": 1780684658,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003967,
+      "time": 1780684674,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003956,
+      "leverage": 6,
+      "time": 1780685475,
+      "strategy": "Amiro",
+      "tp": 0.00039279267241379315,
+      "sl": 0.0003991514285714286
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003927,
+      "time": 1780685531,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003912,
+      "time": 1780685551,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003899,
+      "time": 1780685573,
+      "exitReason": "TP3",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004021,
+      "leverage": 8,
+      "time": 1780733953,
+      "strategy": "Amiro",
+      "tp": 0.00040384875000000004,
+      "sl": 0.00040048142857142857
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004039,
+      "time": 1780734078,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro",
+      "fraction": 0.75
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004061,
+      "time": 1780734532,
+      "exitReason": "TP3",
+      "fullyExited": true,
+      "strategy": "Amiro",
+      "fraction": 0.25
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004093,
+      "leverage": 6,
+      "time": 1780751529,
+      "strategy": "Amiro",
+      "tp": 0.00041185964285714283,
+      "sl": 0.00040780714285714283
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004078,
+      "time": 1780751769,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004098,
+      "leverage": 6,
+      "time": 1780755365,
+      "strategy": "Amiro",
+      "tp": 0.00041055714285714287,
+      "sl": 0.00040832285714285715
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004107,
+      "time": 1780755612,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004098,
+      "time": 1780755730,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0004015,
+      "leverage": 6,
+      "time": 1780762504,
+      "strategy": "Amiro",
+      "tp": 0.00039978625,
+      "sl": 0.0004037942857142857
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003997,
+      "time": 1780763217,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003989,
+      "time": 1780763265,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.000398,
+      "time": 1780763416,
+      "exitReason": "TP3",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003991,
+      "leverage": 6,
+      "time": 1780763530,
+      "strategy": "Amiro",
+      "tp": 0.00039811999999999996,
+      "sl": 0.00040119
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003981,
+      "time": 1780763592,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003976,
+      "time": 1780763680,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003982,
+      "time": 1780763753,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003982,
+      "leverage": 6,
+      "time": 1780763828,
+      "strategy": "Amiro",
+      "tp": 0.00039729999999999995,
+      "sl": 0.00040025857142857136
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0004003,
+      "time": 1780764285,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003989,
+      "leverage": 6,
+      "time": 1780766825,
+      "strategy": "Amiro",
+      "tp": 0.0003979192307692308,
+      "sl": 0.0004006285714285714
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003978,
+      "time": 1780767488,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003973,
+      "time": 1780767520,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003967,
+      "time": 1780767579,
+      "exitReason": "TP3",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003952,
+      "leverage": 6,
+      "time": 1780769170,
+      "strategy": "Amiro",
+      "tp": 0.000394065,
+      "sl": 0.00039667714285714285
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003967,
+      "time": 1780769471,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.000395,
+      "leverage": 6,
+      "time": 1780772044,
+      "strategy": "Amiro",
+      "tp": 0.0003940714285714285,
+      "sl": 0.0003962571428571429
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003963,
+      "time": 1780772206,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL",
+      "price": 0.0003961,
+      "leverage": 6,
+      "time": 1780772357,
+      "strategy": "Amiro",
+      "tp": 0.0003942333333333333,
+      "sl": 0.00039742
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY_EXIT",
+      "price": 0.0003975,
+      "time": 1780772803,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004034,
+      "leverage": 8,
+      "time": 1780792939,
+      "strategy": "Amiro",
+      "tp": 0.00040493333333333333,
+      "sl": 0.00040179714285714285
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004054,
+      "time": 1780794221,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro",
+      "fraction": 0.75
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004057,
+      "time": 1780794223,
+      "exitReason": "TP3",
+      "fullyExited": true,
+      "strategy": "Amiro",
+      "fraction": 0.25
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.000411,
+      "leverage": 6,
+      "time": 1780807505,
+      "strategy": "Amiro",
+      "tp": 0.00041214744008714595,
+      "sl": 0.00040964857142857143
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004139,
+      "time": 1780809235,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.000414,
+      "time": 1780809237,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004119,
+      "time": 1780809271,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004129,
+      "leverage": 6,
+      "time": 1780810464,
+      "strategy": "Amiro",
+      "tp": 0.0004140096638655462,
+      "sl": 0.0004111085714285715
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004143,
+      "time": 1780810616,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004146,
+      "time": 1780810674,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.000414,
+      "time": 1780810682,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004189,
+      "leverage": 6,
+      "time": 1780822444,
+      "strategy": "Amiro",
+      "tp": 0.00041998571428571423,
+      "sl": 0.00041703
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004203,
+      "time": 1780822679,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004206,
+      "time": 1780822799,
+      "exitReason": "TP2",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004199,
+      "time": 1780822847,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "BUY",
+      "price": 0.0004208,
+      "leverage": 6,
+      "time": 1780823105,
+      "strategy": "Amiro",
+      "tp": 0.000421825,
+      "sl": 0.0004187728571428571
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004223,
+      "time": 1780823740,
+      "exitReason": "TP1",
+      "fullyExited": false,
+      "strategy": "Amiro"
+    },
+    {
+      "symbol": "BOME/USDT:USDT",
+      "type": "SELL_EXIT",
+      "price": 0.0004208,
+      "time": 1780823809,
+      "exitReason": "SL",
+      "fullyExited": true,
+      "strategy": "Amiro"
+    }
+  ],
+  "logs": [],
+  "stats": {
+    "winRate": 67,
+    "totalTrades": 21,
+    "avgCapital": 700,
+    "totalPnL": 138.52072939492203,
+    "takeProfitCount": 14
+  }
+}

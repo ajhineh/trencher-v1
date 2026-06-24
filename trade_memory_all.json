@@ -1,0 +1,3276 @@
+[
+  {
+    "id": "1779400940705-8ee2qh",
+    "timestamp": 1779400940,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05806,
+      "leverage": 7,
+      "riskLevel": "LOW",
+      "confidence": 66,
+      "channelWidth": 0.00021000000000000185,
+      "channelWidthPct": 0.0036169479848432973,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00004999999999999995,
+      "atrPct": 0.0008611780916293481,
+      "slPrice": 0.05817,
+      "slDistancePct": 0.0018945918015845502,
+      "tp1Price": 0.057955,
+      "tp1DistancePct": 0.0018084739924216487
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05819,
+        "pnlPct": -1.567344126765393,
+        "pnlUsdt": -5.485704443678875,
+        "timestamp": 1779401221136,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.567344126765393,
+    "finalPnlUsdt": -5.485704443678875,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 281
+  },
+  {
+    "id": "1779401266484-oj8ixf",
+    "timestamp": 1779401266,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05819,
+      "leverage": 9,
+      "riskLevel": "LOW",
+      "confidence": 80,
+      "channelWidth": 0.0001999999999999988,
+      "channelWidthPct": 0.0034370166695308264,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00005571428571428493,
+      "atrPct": 0.0009574546436550083,
+      "slPrice": 0.05831257142857143,
+      "slDistancePct": 0.002106400216041076,
+      "tp1Price": 0.05809,
+      "tp1DistancePct": 0.0017185083347653536
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05809,
+        "pnlPct": 1.1599931259666136,
+        "pnlUsdt": 4.059975940883148,
+        "timestamp": 1779401622059,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05819,
+        "pnlPct": 0,
+        "pnlUsdt": 0,
+        "timestamp": 1779402654733,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.1599931259666136,
+    "finalPnlUsdt": 4.059975940883148,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1388
+  },
+  {
+    "id": "1779409318718-84eymh",
+    "timestamp": 1779409318,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05754,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 70,
+      "channelWidth": 0.0001999999999999988,
+      "channelWidthPct": 0.003475842891901265,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00006500000000000058,
+      "atrPct": 0.001129648939867928,
+      "slPrice": 0.057683000000000005,
+      "slDistancePct": 0.002485227667709493,
+      "tp1Price": 0.057440000000000005,
+      "tp1DistancePct": 0.0017379214459505722
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0574,
+        "pnlPct": 0.7299270072992765,
+        "pnlUsdt": 2.5547445255474677,
+        "timestamp": 1779409346136,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05739,
+        "pnlPct": 0.39103232533890586,
+        "pnlUsdt": 1.3686131386861704,
+        "timestamp": 1779409350137,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05745,
+        "pnlPct": 0.9384775808133452,
+        "pnlUsdt": 3.2846715328467084,
+        "timestamp": 1779409430344,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.0594369134515276,
+    "finalPnlUsdt": 7.2080291970803465,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 112
+  },
+  {
+    "id": "1779411674241-93lvx6",
+    "timestamp": 1779411674,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05735,
+      "leverage": 7,
+      "riskLevel": "VERY_LOW",
+      "confidence": 90,
+      "channelWidth": 0.00014999999999999736,
+      "channelWidthPct": 0.0026155187445509567,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00006000000000000053,
+      "atrPct": 0.0010462074978204103,
+      "slPrice": 0.057482,
+      "slDistancePct": 0.0023016564952048854,
+      "tp1Price": 0.057275,
+      "tp1DistancePct": 0.0013077593722754784
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05749,
+        "pnlPct": -1.7088055797733368,
+        "pnlUsdt": -5.980819529206679,
+        "timestamp": 1779412289397,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.7088055797733368,
+    "finalPnlUsdt": -5.980819529206679,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 615
+  },
+  {
+    "id": "1779416523333-lndo31",
+    "timestamp": 1779416523,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05785,
+      "leverage": 5,
+      "riskLevel": "MEDIUM",
+      "confidence": 70,
+      "channelWidth": 0.00010000000000000286,
+      "channelWidthPct": 0.0017286084701815534,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.000039999999999999854,
+      "atrPct": 0.000691443388072599,
+      "slPrice": 0.057762,
+      "slDistancePct": 0.0015211754537596855,
+      "tp1Price": 0.0579,
+      "tp1DistancePct": 0.0008643042350907767
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05776,
+        "pnlPct": -0.777873811581675,
+        "pnlUsdt": -2.7225583405358624,
+        "timestamp": 1779416679480,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -0.777873811581675,
+    "finalPnlUsdt": -2.7225583405358624,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 156
+  },
+  {
+    "id": "1779416726297-0k15e6",
+    "timestamp": 1779416726,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05775,
+      "leverage": 5,
+      "riskLevel": "MEDIUM",
+      "confidence": 70,
+      "channelWidth": 0.00010000000000000286,
+      "channelWidthPct": 0.001731601731601781,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.000040000000000000356,
+      "atrPct": 0.0006926406926406988,
+      "slPrice": 0.057662000000000005,
+      "slDistancePct": 0.0015238095238094857,
+      "tp1Price": 0.057800000000000004,
+      "tp1DistancePct": 0.0008658008658008905
+    },
+    "exits": [
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05781,
+        "pnlPct": 0.5194805194804983,
+        "pnlUsdt": 1.8181818181817442,
+        "timestamp": 1779417117492,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 0.5194805194804983,
+    "finalPnlUsdt": 1.8181818181817442,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 391
+  },
+  {
+    "id": "1779417212437-gtbbl0",
+    "timestamp": 1779417212,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05779,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 72,
+      "channelWidth": 0.00016999999999999654,
+      "channelWidthPct": 0.0029416854127010993,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.000050714285714285384,
+      "atrPct": 0.0008775616147133653,
+      "slPrice": 0.05790157142857143,
+      "slDistancePct": 0.0019306355523693746,
+      "tp1Price": 0.057705000000000006,
+      "tp1DistancePct": 0.0014708427063504898
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0577,
+        "pnlPct": 0.4672088596643008,
+        "pnlUsdt": 1.6352310088250528,
+        "timestamp": 1779417276516,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05781,
+        "pnlPct": -0.20764838207301456,
+        "pnlUsdt": -0.726769337255551,
+        "timestamp": 1779417418082,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 0.25956047759128625,
+    "finalPnlUsdt": 0.9084616715695017,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 206
+  },
+  {
+    "id": "1779421024734-1o14k6",
+    "timestamp": 1779421024,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05802,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 73,
+      "channelWidth": 0.00012000000000000205,
+      "channelWidthPct": 0.002068252326783903,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.000060000000000000035,
+      "atrPct": 0.0010341261633919343,
+      "slPrice": 0.057888,
+      "slDistancePct": 0.0022750775594622573,
+      "tp1Price": 0.05808000000000001,
+      "tp1DistancePct": 0.0010341261633920113
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05788,
+        "pnlPct": -1.9303688383316266,
+        "pnlUsdt": -6.756290934160694,
+        "timestamp": 1779421405387,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.9303688383316266,
+    "finalPnlUsdt": -6.756290934160694,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 381
+  },
+  {
+    "id": "1779421457133-6bmzjq",
+    "timestamp": 1779421457,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05795,
+      "leverage": 9,
+      "riskLevel": "LOW",
+      "confidence": 85,
+      "channelWidth": 0.00012000000000000205,
+      "channelWidthPct": 0.0020707506471096125,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00005714285714285581,
+      "atrPct": 0.0009860717367188231,
+      "slPrice": 0.05782428571428572,
+      "slDistancePct": 0.0021693578207814417,
+      "tp1Price": 0.058010000000000006,
+      "tp1DistancePct": 0.0010353753235548661
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05802,
+        "pnlPct": 0.8153580672994033,
+        "pnlUsdt": 2.8537532355479116,
+        "timestamp": 1779438180519,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05806,
+        "pnlPct": 0.4270923209663463,
+        "pnlUsdt": 1.4948231233822122,
+        "timestamp": 1779438217635,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.2424503882657496,
+    "finalPnlUsdt": 4.348576358930124,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 16760
+  },
+  {
+    "id": "1779500609890-bupkrm",
+    "timestamp": 1779500609,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05376,
+      "leverage": 4,
+      "riskLevel": "MEDIUM",
+      "confidence": 61,
+      "channelWidth": 0.0002967307692307644,
+      "channelWidthPct": 0.005519545558607969,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00006357142857142672,
+      "atrPct": 0.0011825042517006458,
+      "slPrice": 0.053620142857142866,
+      "slDistancePct": 0.002601509353741369,
+      "tp1Price": 0.05390836538461538,
+      "tp1DistancePct": 0.0027597727793039198
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05362,
+        "pnlPct": -1.0416666666666758,
+        "pnlUsdt": -3.6458333333333655,
+        "timestamp": 1779503446352,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.0416666666666758,
+    "finalPnlUsdt": -3.6458333333333655,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 2837
+  },
+  {
+    "id": "1779503656818-7awl30",
+    "timestamp": 1779503656,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05369,
+      "leverage": 5,
+      "riskLevel": "VERY_LOW",
+      "confidence": 66,
+      "channelWidth": 0.0001706666666666662,
+      "channelWidthPct": 0.0031787421617930005,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00004214285714285716,
+      "atrPct": 0.0007849293563579282,
+      "slPrice": 0.05378271428571429,
+      "slDistancePct": 0.001726844583987451,
+      "tp1Price": 0.05360466666666667,
+      "tp1DistancePct": 0.0015893710808965002
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0536,
+        "pnlPct": 0.4190724529707571,
+        "pnlUsdt": 1.4667535853976499,
+        "timestamp": 1779503688419,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05369,
+        "pnlPct": 0,
+        "pnlUsdt": 0,
+        "timestamp": 1779503874703,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 0.4190724529707571,
+    "finalPnlUsdt": 1.4667535853976499,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 218
+  },
+  {
+    "id": "1779510612992-ssj46v",
+    "timestamp": 1779510612,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05368,
+      "leverage": 4,
+      "riskLevel": "MEDIUM",
+      "confidence": 61,
+      "channelWidth": 0.00015285714285714208,
+      "channelWidthPct": 0.0028475622737917676,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00004642857142857078,
+      "atrPct": 0.0008649137747498282,
+      "slPrice": 0.053782142857142855,
+      "slDistancePct": 0.0019028103044496313,
+      "tp1Price": 0.05360357142857143,
+      "tp1DistancePct": 0.0014237811368958192
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05379,
+        "pnlPct": -0.8196721311475333,
+        "pnlUsdt": -2.868852459016367,
+        "timestamp": 1779510720654,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -0.8196721311475333,
+    "finalPnlUsdt": -2.868852459016367,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 108
+  },
+  {
+    "id": "1779520206099-34eyfc",
+    "timestamp": 1779520206,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05317,
+      "leverage": 4,
+      "riskLevel": "MEDIUM",
+      "confidence": 65,
+      "channelWidth": 0.00016527777777777808,
+      "channelWidthPct": 0.0031084780473533587,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00005285714285714219,
+      "atrPct": 0.0009941159085413238,
+      "slPrice": 0.05328628571428572,
+      "slDistancePct": 0.002187054998790946,
+      "tp1Price": 0.05308736111111111,
+      "tp1DistancePct": 0.0015542390236766793
+    },
+    "exits": [
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05308,
+        "pnlPct": 0.6770735377092331,
+        "pnlUsdt": 2.3697573819823154,
+        "timestamp": 1779521012122,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 0.6770735377092331,
+    "finalPnlUsdt": 2.3697573819823154,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 806
+  },
+  {
+    "id": "1779548823212-w580mm",
+    "timestamp": 1779548823,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05357,
+      "leverage": 4,
+      "riskLevel": "MEDIUM",
+      "confidence": 60,
+      "channelWidth": 0.0003318750000000023,
+      "channelWidthPct": 0.006195165204405494,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00009142857142857166,
+      "atrPct": 0.001706712178991444,
+      "slPrice": 0.05336885714285714,
+      "slDistancePct": 0.003754766793781185,
+      "tp1Price": 0.0537359375,
+      "tp1DistancePct": 0.003097582602202682
+    },
+    "exits": [
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05376,
+        "pnlPct": 1.4187044987866544,
+        "pnlUsdt": 4.96546574575329,
+        "timestamp": 1779548938111,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.4187044987866544,
+    "finalPnlUsdt": 4.96546574575329,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 115
+  },
+  {
+    "id": "1779549326067-6ddjct",
+    "timestamp": 1779549326,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05379,
+      "leverage": 7,
+      "riskLevel": "LOW",
+      "confidence": 60,
+      "channelWidth": 0.00033187499999999537,
+      "channelWidthPct": 0.006169827105409842,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00009928571428571445,
+      "atrPct": 0.0018458024592993949,
+      "slPrice": 0.05357157142857143,
+      "slDistancePct": 0.004060765410458651,
+      "tp1Price": 0.053955937499999995,
+      "tp1DistancePct": 0.003084913552704921
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05357,
+        "pnlPct": -2.862985685071548,
+        "pnlUsdt": -10.020449897750417,
+        "timestamp": 1779550653449,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -2.862985685071548,
+    "finalPnlUsdt": -10.020449897750417,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 1327
+  },
+  {
+    "id": "1779560882720-vy534k",
+    "timestamp": 1779560882,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05463,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 82,
+      "channelWidth": 0.0003870454545454524,
+      "channelWidthPct": 0.0070848518130231086,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.0000857142857142852,
+      "atrPct": 0.0015689966266572433,
+      "slPrice": 0.05444142857142857,
+      "slDistancePct": 0.003451792578645924,
+      "tp1Price": 0.05482352272727273,
+      "tp1DistancePct": 0.003542425906511618
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05483,
+        "pnlPct": 1.0982976386600702,
+        "pnlUsdt": 3.844041735310246,
+        "timestamp": 1779561182773,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05496,
+        "pnlPct": 0.9060955518945741,
+        "pnlUsdt": 3.1713344316310095,
+        "timestamp": 1779561241048,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05482,
+        "pnlPct": 2.0867655134541754,
+        "pnlUsdt": 7.303679297089614,
+        "timestamp": 1779561264298,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 4.091158704008819,
+    "finalPnlUsdt": 14.31905546403087,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 382
+  },
+  {
+    "id": "1779561545962-5rpsr3",
+    "timestamp": 1779561545,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05487,
+      "leverage": 7,
+      "riskLevel": "VERY_LOW",
+      "confidence": 91,
+      "channelWidth": 0.00032487179487179774,
+      "channelWidthPct": 0.005920754417200615,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00010142857142857077,
+      "atrPct": 0.0018485250852664618,
+      "slPrice": 0.05464685714285715,
+      "slDistancePct": 0.004066755187586155,
+      "tp1Price": 0.0550324358974359,
+      "tp1DistancePct": 0.0029603772086003073
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05464,
+        "pnlPct": -2.934208128303275,
+        "pnlUsdt": -10.269728449061462,
+        "timestamp": 1779562173090,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -2.934208128303275,
+    "finalPnlUsdt": -10.269728449061462,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 628
+  },
+  {
+    "id": "1779646569270-m46yb3",
+    "timestamp": 1779646569,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.055,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.00035174603174603636,
+      "channelWidthPct": 0.006395382395382479,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.0000757142857142871,
+      "atrPct": 0.0013766233766234017,
+      "slPrice": 0.05483342857142857,
+      "slDistancePct": 0.0030285714285715015,
+      "tp1Price": 0.05517587301587302,
+      "tp1DistancePct": 0.0031976911976912396
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05519,
+        "pnlPct": 1.0363636363636508,
+        "pnlUsdt": 3.627272727272778,
+        "timestamp": 1779646671254,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05527,
+        "pnlPct": 0.7363636363636348,
+        "pnlUsdt": 2.5772727272727214,
+        "timestamp": 1779646942601,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05517,
+        "pnlPct": 1.8545454545454167,
+        "pnlUsdt": 6.490909090908959,
+        "timestamp": 1779647058197,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 3.627272727272702,
+    "finalPnlUsdt": 12.695454545454458,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 489
+  },
+  {
+    "id": "1779647163956-9liy2j",
+    "timestamp": 1779647163,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05512,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.0005227509652509579,
+      "channelWidthPct": 0.009483870922550035,
+      "macroTrend": "SIDEWAYS_NORMAL",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00008071428571428565,
+      "atrPct": 0.0014643375492432082,
+      "slPrice": 0.05494242857142857,
+      "slDistancePct": 0.003221542608335082,
+      "tp1Price": 0.05538137548262548,
+      "tp1DistancePct": 0.004741935461274954
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05539,
+        "pnlPct": 2.93904208998548,
+        "pnlUsdt": 10.28664731494918,
+        "timestamp": 1779648119376,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05556,
+        "pnlPct": 1.5965166908562987,
+        "pnlUsdt": 5.587808417997045,
+        "timestamp": 1779649262390,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 4.535558780841779,
+    "finalPnlUsdt": 15.874455732946224,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 2099
+  },
+  {
+    "id": "1779672151544-bvcaap",
+    "timestamp": 1779672151,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05473,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 87,
+      "channelWidth": 0.00015392857142856875,
+      "channelWidthPct": 0.00281250815692616,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.0000592857142857141,
+      "atrPct": 0.0010832398005794646,
+      "slPrice": 0.054860428571428574,
+      "slDistancePct": 0.0023831275612748583,
+      "tp1Price": 0.054653035714285716,
+      "tp1DistancePct": 0.00140625407846308
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05462,
+        "pnlPct": 0.6029599853827827,
+        "pnlUsdt": 2.1103599488397395,
+        "timestamp": 1779672328610,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05457,
+        "pnlPct": 0.43851635300566527,
+        "pnlUsdt": 1.5348072355198283,
+        "timestamp": 1779672333990,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05457,
+        "pnlPct": 0.43851635300566527,
+        "pnlUsdt": 1.5348072355198283,
+        "timestamp": 1779672335992,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.4799926913941133,
+    "finalPnlUsdt": 5.179974419879397,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 184
+  },
+  {
+    "id": "1779672375499-m126s0",
+    "timestamp": 1779672375,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05463,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.00010095238095238906,
+      "channelWidthPct": 0.0018479293602853572,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00006428571428571365,
+      "atrPct": 0.001176747469992928,
+      "slPrice": 0.05477142857142857,
+      "slDistancePct": 0.0025888444339844433,
+      "tp1Price": 0.0545795238095238,
+      "tp1DistancePct": 0.0009239646801427421
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05456,
+        "pnlPct": 0.3844041735310303,
+        "pnlUsdt": 1.345414607358606,
+        "timestamp": 1779672456507,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05463,
+        "pnlPct": 0,
+        "pnlUsdt": 0,
+        "timestamp": 1779672621991,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 0.3844041735310303,
+    "finalPnlUsdt": 1.345414607358606,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 246
+  },
+  {
+    "id": "1779673033722-hw5b5c",
+    "timestamp": 1779673033,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05461,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 80,
+      "channelWidth": 0.00021004761904761665,
+      "channelWidthPct": 0.003846321535389428,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00004571428571428633,
+      "atrPct": 0.0008371046642425624,
+      "slPrice": 0.05471057142857143,
+      "slDistancePct": 0.001841630261333621,
+      "tp1Price": 0.05450497619047619,
+      "tp1DistancePct": 0.0019231607676947775
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05448,
+        "pnlPct": 0.7141549166819163,
+        "pnlUsdt": 2.499542208386707,
+        "timestamp": 1779673493758,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05444,
+        "pnlPct": 0.46694744552278855,
+        "pnlUsdt": 1.6343160593297599,
+        "timestamp": 1779673609271,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05439,
+        "pnlPct": 0.6042849295000859,
+        "pnlUsdt": 2.1149972532503005,
+        "timestamp": 1779673686869,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.785387291704791,
+    "finalPnlUsdt": 6.248855520966767,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 653
+  },
+  {
+    "id": "1779696007370-zg356w",
+    "timestamp": 1779696007,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0005425,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 78,
+      "channelWidth": 0.0000023628787878787316,
+      "channelWidthPct": 0.004355536936181993,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 6.500000000000119e-7,
+      "atrPct": 0.0011981566820276717,
+      "slPrice": 0.0005410699999999999,
+      "slDistancePct": 0.0026359447004609634,
+      "tp1Price": 0.0005436814393939394,
+      "tp1DistancePct": 0.0021777684680909966
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0005437,
+        "pnlPct": 0.6635944700460991,
+        "pnlUsdt": 2.322580645161347,
+        "timestamp": 1779696337058,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.0005443,
+        "pnlPct": 0.4976958525345443,
+        "pnlUsdt": 1.741935483870905,
+        "timestamp": 1779696398477,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0005436,
+        "pnlPct": 1.2165898617511217,
+        "pnlUsdt": 4.258064516128926,
+        "timestamp": 1779696422287,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.377880184331765,
+    "finalPnlUsdt": 8.322580645161178,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 415
+  },
+  {
+    "id": "1779711842462-el99eo",
+    "timestamp": 1779711842,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05626,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 89,
+      "channelWidth": 0.00016017096336500003,
+      "channelWidthPct": 0.002846977663793104,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00006928571428571419,
+      "atrPct": 0.0012315270935960576,
+      "slPrice": 0.05610757142857142,
+      "slDistancePct": 0.0027093596059113794,
+      "tp1Price": 0.0563400854816825,
+      "tp1DistancePct": 0.001423488831896552
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05636,
+        "pnlPct": 0.5332385353715048,
+        "pnlUsdt": 1.8663348738002667,
+        "timestamp": 1779712079773,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05639,
+        "pnlPct": 0.34660504799148184,
+        "pnlUsdt": 1.2131176679701865,
+        "timestamp": 1779712093114,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05634,
+        "pnlPct": 0.8531816565944225,
+        "pnlUsdt": 2.9861357980804786,
+        "timestamp": 1779712262042,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.733025239957409,
+    "finalPnlUsdt": 6.065588339850931,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 420
+  },
+  {
+    "id": "1779713780087-6cnryu",
+    "timestamp": 1779713780,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0005343,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 80,
+      "channelWidth": 0.000002864236111111123,
+      "channelWidthPct": 0.005360726391748311,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 5.285714285714336e-7,
+      "atrPct": 0.0009892783615411448,
+      "slPrice": 0.0005354628571428572,
+      "slDistancePct": 0.002176412395390617,
+      "tp1Price": 0.0005328678819444445,
+      "tp1DistancePct": 0.0026803631958741557
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0005355,
+        "pnlPct": -1.3475575519370249,
+        "pnlUsdt": -4.7164514317795865,
+        "timestamp": 1779714229556,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.3475575519370249,
+    "finalPnlUsdt": -4.7164514317795865,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 449
+  },
+  {
+    "id": "1779714665223-kyxzcb",
+    "timestamp": 1779714665,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05708,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.0007082336182336196,
+      "channelWidthPct": 0.012407736829600904,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00014714285714285808,
+      "atrPct": 0.0025778356191811158,
+      "slPrice": 0.05675628571428571,
+      "slDistancePct": 0.005671238362198463,
+      "tp1Price": 0.05743411680911681,
+      "tp1DistancePct": 0.006203868414800452
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05674,
+        "pnlPct": -3.573931324456903,
+        "pnlUsdt": -12.508759635599162,
+        "timestamp": 1779714786537,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -3.573931324456903,
+    "finalPnlUsdt": -12.508759635599162,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 121
+  },
+  {
+    "id": "1779714832641-p106on",
+    "timestamp": 1779714832,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05692,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 77,
+      "channelWidth": 0.0007082336182336266,
+      "channelWidthPct": 0.012442614515699694,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00017500000000000106,
+      "atrPct": 0.0030744905130007214,
+      "slPrice": 0.056534999999999995,
+      "slDistancePct": 0.0067638791286016055,
+      "tp1Price": 0.057274116809116815,
+      "tp1DistancePct": 0.006221307257849908
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05729,
+        "pnlPct": 1.9501054111033151,
+        "pnlUsdt": 6.825368938861603,
+        "timestamp": 1779715605469,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05747,
+        "pnlPct": 1.4494026704146221,
+        "pnlUsdt": 5.072909346451177,
+        "timestamp": 1779715924714,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05726,
+        "pnlPct": 3.5839775122979622,
+        "pnlUsdt": 12.54392129304287,
+        "timestamp": 1779716067924,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 6.9834855938158995,
+    "finalPnlUsdt": 24.44219957835565,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1235
+  },
+  {
+    "id": "1779716166518-jpj2rr",
+    "timestamp": 1779716166,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05723,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 85,
+      "channelWidth": 0.00046241666666666653,
+      "channelWidthPct": 0.008079969712854561,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00012285714285714282,
+      "atrPct": 0.0021467262424802167,
+      "slPrice": 0.05695971428571429,
+      "slDistancePct": 0.004722797733456508,
+      "tp1Price": 0.05746120833333333,
+      "tp1DistancePct": 0.00403998485642722
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05748,
+        "pnlPct": 1.3105014852350179,
+        "pnlUsdt": 4.586755198322562,
+        "timestamp": 1779716813914,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05759,
+        "pnlPct": 0.9435610693692098,
+        "pnlUsdt": 3.302463742792234,
+        "timestamp": 1779716915373,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05745,
+        "pnlPct": 2.306482614013608,
+        "pnlUsdt": 8.072689149047628,
+        "timestamp": 1779717078413,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 4.5605451686178355,
+    "finalPnlUsdt": 15.961908090162424,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 912
+  },
+  {
+    "id": "1779718468508-mo5rcl",
+    "timestamp": 1779718468,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0005382,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 78,
+      "channelWidth": 0.000001675238095238214,
+      "channelWidthPct": 0.003112668330059855,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 8.857142857142995e-7,
+      "atrPct": 0.0016456972978712366,
+      "slPrice": 0.0005362514285714285,
+      "slDistancePct": 0.003620534055316689,
+      "tp1Price": 0.0005390376190476191,
+      "tp1DistancePct": 0.0015563341650299276
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0005392,
+        "pnlPct": 0.5574136008918753,
+        "pnlUsdt": 1.9509476031215636,
+        "timestamp": 1779718632313,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.0005395,
+        "pnlPct": 0.36231884057973407,
+        "pnlUsdt": 1.2681159420290693,
+        "timestamp": 1779718644910,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0005387,
+        "pnlPct": 0.5574136008919357,
+        "pnlUsdt": 1.950947603121775,
+        "timestamp": 1779718682584,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.477146042363545,
+    "finalPnlUsdt": 5.170011148272408,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 214
+  },
+  {
+    "id": "1779722064512-sabk34",
+    "timestamp": 1779722064,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0005427,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 76,
+      "channelWidth": 0.000002462499999999904,
+      "channelWidthPct": 0.0045374976967015,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 8.785714285714228e-7,
+      "atrPct": 0.0016188896785911604,
+      "slPrice": 0.0005407671428571429,
+      "slDistancePct": 0.003561557292900459,
+      "tp1Price": 0.00054393125,
+      "tp1DistancePct": 0.00226874884835075
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0005407,
+        "pnlPct": -2.2111663902709213,
+        "pnlUsdt": -7.739082365948224,
+        "timestamp": 1779722423405,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -2.2111663902709213,
+    "finalPnlUsdt": -7.739082365948224,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 359
+  },
+  {
+    "id": "1779727924217-6m92x9",
+    "timestamp": 1779727924,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05721,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 86,
+      "channelWidth": 0.00032088095238095443,
+      "channelWidthPct": 0.005608826295769174,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00008071428571428663,
+      "atrPct": 0.0014108422603441118,
+      "slPrice": 0.05703242857142857,
+      "slDistancePct": 0.0031038529727570306,
+      "tp1Price": 0.05737044047619047,
+      "tp1DistancePct": 0.002804413147884526
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05739,
+        "pnlPct": 0.9438909281594106,
+        "pnlUsdt": 3.303618248557937,
+        "timestamp": 1779728342742,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05746,
+        "pnlPct": 0.655479811221815,
+        "pnlUsdt": 2.294179339276352,
+        "timestamp": 1779728953498,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05737,
+        "pnlPct": 1.6780283167278491,
+        "pnlUsdt": 5.873099108547471,
+        "timestamp": 1779729099563,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 3.2773990561090747,
+    "finalPnlUsdt": 11.470896696381761,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1175
+  },
+  {
+    "id": "1779727986933-50raoa",
+    "timestamp": 1779727986,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.000544,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 83,
+      "channelWidth": 0.0000030422222222222612,
+      "channelWidthPct": 0.00559232026143798,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 7.35714285714292e-7,
+      "atrPct": 0.0013524159663865663,
+      "slPrice": 0.0005423814285714285,
+      "slDistancePct": 0.0029753151260504596,
+      "tp1Price": 0.0005455211111111112,
+      "tp1DistancePct": 0.00279616013071909
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0005423,
+        "pnlPct": -1.8749999999999858,
+        "pnlUsdt": -6.56249999999995,
+        "timestamp": 1779729242757,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.8749999999999858,
+    "finalPnlUsdt": -6.56249999999995,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 1256
+  },
+  {
+    "id": "1779745805195-v5zjjv",
+    "timestamp": 1779745805,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05652,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 83,
+      "channelWidth": 0.0002713286713286675,
+      "channelWidthPct": 0.004800578048985624,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.000059285714285713604,
+      "atrPct": 0.001048933373774126,
+      "slPrice": 0.056650428571428574,
+      "slDistancePct": 0.0023076534223031315,
+      "tp1Price": 0.056384335664335664,
+      "tp1DistancePct": 0.0024002890244928738
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05638,
+        "pnlPct": 1.9815994338287506,
+        "pnlUsdt": 6.935598018400627,
+        "timestamp": 1779746569732,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05631,
+        "pnlPct": 1.4861995753715629,
+        "pnlUsdt": 5.20169851380047,
+        "timestamp": 1779746640411,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0564,
+        "pnlPct": 3.397027600849315,
+        "pnlUsdt": 11.889596602972603,
+        "timestamp": 1779746712294,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 6.864826610049629,
+    "finalPnlUsdt": 24.0268931351737,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 907
+  },
+  {
+    "id": "1779757041527-t3tfk7",
+    "timestamp": 1779757041,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05549,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 88,
+      "channelWidth": 0.0003796428571428631,
+      "channelWidthPct": 0.006841644569163149,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00010285714285714263,
+      "atrPct": 0.0018536158381175461,
+      "slPrice": 0.05571628571428571,
+      "slDistancePct": 0.0040779548438585975,
+      "tp1Price": 0.05530017857142856,
+      "tp1DistancePct": 0.003420822284581637
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0553,
+        "pnlPct": 2.739232294106985,
+        "pnlUsdt": 9.587313029374446,
+        "timestamp": 1779757412538,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05549,
+        "pnlPct": 0,
+        "pnlUsdt": 0,
+        "timestamp": 1779757622247,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.739232294106985,
+    "finalPnlUsdt": 9.587313029374446,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 581
+  },
+  {
+    "id": "1779759902985-t4kezx",
+    "timestamp": 1779759902,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0005142,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 79,
+      "channelWidth": 0.000002234999999999954,
+      "channelWidthPct": 0.0043465577596265145,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 9.214285714285745e-7,
+      "atrPct": 0.0017919653275545982,
+      "slPrice": 0.0005162271428571429,
+      "slDistancePct": 0.003942323720620035,
+      "tp1Price": 0.0005130825,
+      "tp1DistancePct": 0.0021732788798132572
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0005163,
+        "pnlPct": -3.267211201866973,
+        "pnlUsdt": -11.435239206534405,
+        "timestamp": 1779760333648,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -3.267211201866973,
+    "finalPnlUsdt": -11.435239206534405,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 431
+  },
+  {
+    "id": "1779761316340-dy3wc1",
+    "timestamp": 1779761316,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05506,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.00013112179487179132,
+      "channelWidthPct": 0.0023814347052631916,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00008142857142857158,
+      "atrPct": 0.001478906128379433,
+      "slPrice": 0.055239142857142855,
+      "slDistancePct": 0.003253593482434742,
+      "tp1Price": 0.0549944391025641,
+      "tp1DistancePct": 0.0011907173526315958
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05499,
+        "pnlPct": 1.017072284780249,
+        "pnlUsdt": 3.559752996730871,
+        "timestamp": 1779761828553,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05507,
+        "pnlPct": -0.2905920813658718,
+        "pnlUsdt": -1.0170722847805513,
+        "timestamp": 1779761844368,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 0.7264802034143771,
+    "finalPnlUsdt": 2.54268071195032,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 528
+  },
+  {
+    "id": "1779768400163-mzk4pn",
+    "timestamp": 1779768400,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0005145,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 76,
+      "channelWidth": 0.0000018550892857143895,
+      "channelWidthPct": 0.0036056157156742264,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 5.999999999999991e-7,
+      "atrPct": 0.001166180758017491,
+      "slPrice": 0.00051318,
+      "slDistancePct": 0.00256559766763842,
+      "tp1Price": 0.0005154275446428572,
+      "tp1DistancePct": 0.0018028078578372186
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0005155,
+        "pnlPct": 1.166180758017521,
+        "pnlUsdt": 4.081632653061324,
+        "timestamp": 1779769362305,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.0005159,
+        "pnlPct": 0.5442176870748432,
+        "pnlUsdt": 1.904761904761951,
+        "timestamp": 1779769447543,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.7103984450923642,
+    "finalPnlUsdt": 5.986394557823275,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1047
+  },
+  {
+    "id": "1779769983821-e0ivac",
+    "timestamp": 1779769983,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0005179,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 77,
+      "channelWidth": 0.000001715134099616834,
+      "channelWidthPct": 0.0033117090164449395,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 6.928571428571248e-7,
+      "atrPct": 0.0013378203183184493,
+      "slPrice": 0.0005163757142857143,
+      "slDistancePct": 0.0029432047003006513,
+      "tp1Price": 0.0005187575670498084,
+      "tp1DistancePct": 0.0016558545082224698
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0005163,
+        "pnlPct": -2.471519598377958,
+        "pnlUsdt": -8.650318594322853,
+        "timestamp": 1779770514817,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -2.471519598377958,
+    "finalPnlUsdt": -8.650318594322853,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 531
+  },
+  {
+    "id": "1779771253206-q0zs0l",
+    "timestamp": 1779771253,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05591,
+      "leverage": 9,
+      "riskLevel": "LOW",
+      "confidence": 81,
+      "channelWidth": 0.0003122222222222207,
+      "channelWidthPct": 0.0055843717084997435,
+      "macroTrend": "SIDEWAYS_NORMAL",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00004142857142857272,
+      "atrPct": 0.0007409867899941463,
+      "slPrice": 0.05581885714285714,
+      "slDistancePct": 0.0016301709379871058,
+      "tp1Price": 0.05606611111111111,
+      "tp1DistancePct": 0.0027921858542498098
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05581,
+        "pnlPct": -1.6097299230907276,
+        "pnlUsdt": -5.634054730817546,
+        "timestamp": 1779771747043,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.6097299230907276,
+    "finalPnlUsdt": -5.634054730817546,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 494
+  },
+  {
+    "id": "1779776688978-o15hzr",
+    "timestamp": 1779776688,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0005198,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 77,
+      "channelWidth": 0.0000018208333333333618,
+      "channelWidthPct": 0.0035029498525074297,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 6.14285714285706e-7,
+      "atrPct": 0.0011817732094761562,
+      "slPrice": 0.0005211514285714285,
+      "slDistancePct": 0.0025999010608476034,
+      "tp1Price": 0.0005188895833333333,
+      "tp1DistancePct": 0.0017514749262537148
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0005178,
+        "pnlPct": 1.154290111581343,
+        "pnlUsdt": 4.040015390534701,
+        "timestamp": 1779776933708,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.0005175,
+        "pnlPct": 0.6637168141592926,
+        "pnlUsdt": 2.323008849557524,
+        "timestamp": 1779776935711,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.0005176,
+        "pnlPct": 0.6348595613697419,
+        "pnlUsdt": 2.2220084647940967,
+        "timestamp": 1779776937710,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.4528664871103776,
+    "finalPnlUsdt": 8.585032704886322,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 249
+  },
+  {
+    "id": "1779781263016-ivz4kz",
+    "timestamp": 1779781263,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05544,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 76,
+      "channelWidth": 0.00009850000000000136,
+      "channelWidthPct": 0.0017766955266955511,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.000060714285714286955,
+      "atrPct": 0.0010951350237064746,
+      "slPrice": 0.05557357142857144,
+      "slDistancePct": 0.0024092970521542977,
+      "tp1Price": 0.05539075,
+      "tp1DistancePct": 0.0008883477633477756
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05559,
+        "pnlPct": -2.1645021645021263,
+        "pnlUsdt": -7.575757575757442,
+        "timestamp": 1779781347383,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -2.1645021645021263,
+    "finalPnlUsdt": -7.575757575757442,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 84
+  },
+  {
+    "id": "1779802752443-j77sxc",
+    "timestamp": 1779802752,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.005582,
+      "leverage": 5,
+      "riskLevel": "MEDIUM",
+      "confidence": 70,
+      "channelWidth": 0.0000279553571428566,
+      "channelWidthPct": 0.005008125607820961,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.000006428571428571414,
+      "atrPct": 0.0011516609510160182,
+      "slPrice": 0.0055916428571428575,
+      "slDistancePct": 0.001727491426524072,
+      "tp1Price": 0.005568022321428572,
+      "tp1DistancePct": 0.0025040628039104803
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.005592,
+        "pnlPct": -0.8957362952346464,
+        "pnlUsdt": -3.1350770333212625,
+        "timestamp": 1779803314023,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -0.8957362952346464,
+    "finalPnlUsdt": -3.1350770333212625,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 562
+  },
+  {
+    "id": "1779807857522-zat385",
+    "timestamp": 1779807857,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05623,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.00032812499999999856,
+      "channelWidthPct": 0.005835408145118238,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00011142857142857135,
+      "atrPct": 0.001981656970097303,
+      "slPrice": 0.05647514285714286,
+      "slDistancePct": 0.004359645334214128,
+      "tp1Price": 0.0560659375,
+      "tp1DistancePct": 0.002917704072559119
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05606,
+        "pnlPct": 2.4186377378624004,
+        "pnlUsdt": 8.465232082518401,
+        "timestamp": 1779808066403,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05626,
+        "pnlPct": -0.8536368486571669,
+        "pnlUsdt": -2.987728970300084,
+        "timestamp": 1779808147509,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.5650008892052334,
+    "finalPnlUsdt": 5.477503112218317,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 290
+  },
+  {
+    "id": "1779809985211-01t9x7",
+    "timestamp": 1779809985,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05585,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.00015814102564102456,
+      "channelWidthPct": 0.002831531345407781,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.0001392857142857138,
+      "atrPct": 0.0024939250543547682,
+      "slPrice": 0.056156428571428565,
+      "slDistancePct": 0.0054866351195804585,
+      "tp1Price": 0.05577092948717949,
+      "tp1DistancePct": 0.0014157656727038284
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0562,
+        "pnlPct": -10.026857654431602,
+        "pnlUsdt": -35.09400179051061,
+        "timestamp": 1779810258288,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -10.026857654431602,
+    "finalPnlUsdt": -35.09400179051061,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 273
+  },
+  {
+    "id": "1779810161958-w3uvua",
+    "timestamp": 1779810161,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.005567,
+      "leverage": 4,
+      "riskLevel": "MEDIUM",
+      "confidence": 65,
+      "channelWidth": 0.000028619230769229807,
+      "channelWidthPct": 0.005140871343493768,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.000009428571428571441,
+      "atrPct": 0.0016936539300469627,
+      "slPrice": 0.005581142857142857,
+      "slDistancePct": 0.0025404808950705107,
+      "tp1Price": 0.005552690384615385,
+      "tp1DistancePct": 0.002570435671746806
+    },
+    "exits": [
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.00555,
+        "pnlPct": 1.221483743488389,
+        "pnlUsdt": 4.275193102209362,
+        "timestamp": 1779810747070,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.221483743488389,
+    "finalPnlUsdt": 4.275193102209362,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 586
+  },
+  {
+    "id": "1779811126909-l1012z",
+    "timestamp": 1779811126,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.005563,
+      "leverage": 4,
+      "riskLevel": "MEDIUM",
+      "confidence": 61,
+      "channelWidth": 0.000030352941176470943,
+      "channelWidthPct": 0.005456218079538188,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.000006428571428571476,
+      "atrPct": 0.0011555943606995282,
+      "slPrice": 0.005572642857142858,
+      "slDistancePct": 0.0017333915410493203,
+      "tp1Price": 0.005547823529411765,
+      "tp1DistancePct": 0.002728109039769094
+    },
+    "exits": [
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.005547,
+        "pnlPct": 1.1504583857631054,
+        "pnlUsdt": 4.026604350170869,
+        "timestamp": 1779811665791,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.1504583857631054,
+    "finalPnlUsdt": 4.026604350170869,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 539
+  },
+  {
+    "id": "1779812043665-d1s80c",
+    "timestamp": 1779812043,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.005544,
+      "leverage": 4,
+      "riskLevel": "MEDIUM",
+      "confidence": 63,
+      "channelWidth": 0.00001979166666666709,
+      "channelWidthPct": 0.0035699254449255207,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.000007214285714285494,
+      "atrPct": 0.001301278086992333,
+      "slPrice": 0.005554821428571429,
+      "slDistancePct": 0.0019519171304885666,
+      "tp1Price": 0.005534104166666666,
+      "tp1DistancePct": 0.0017849627224628386
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.005555,
+        "pnlPct": -0.7936507936507738,
+        "pnlUsdt": -2.7777777777777084,
+        "timestamp": 1779812685619,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -0.7936507936507738,
+    "finalPnlUsdt": -2.7777777777777084,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 642
+  },
+  {
+    "id": "1779817142931-hozeih",
+    "timestamp": 1779817142,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05596,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 77,
+      "channelWidth": 0.0008131250000000048,
+      "channelWidthPct": 0.014530468191565489,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00014785714285714402,
+      "atrPct": 0.0026421934034514655,
+      "slPrice": 0.05628528571428572,
+      "slDistancePct": 0.005812825487593199,
+      "tp1Price": 0.0555534375,
+      "tp1DistancePct": 0.007265234095782807
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05633,
+        "pnlPct": -5.289492494638961,
+        "pnlUsdt": -18.513223731236362,
+        "timestamp": 1779819852924,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -5.289492494638961,
+    "finalPnlUsdt": -18.513223731236362,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 2710
+  },
+  {
+    "id": "1779821350200-0uxz4l",
+    "timestamp": 1779821350,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05581,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 84,
+      "channelWidth": 0.00037525641025641654,
+      "channelWidthPct": 0.006723820287697841,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00008928571428571485,
+      "atrPct": 0.0015998157012312283,
+      "slPrice": 0.05600642857142857,
+      "slDistancePct": 0.0035195945427086476,
+      "tp1Price": 0.05562237179487179,
+      "tp1DistancePct": 0.0033619101438489207
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0556,
+        "pnlPct": 3.0102132234366867,
+        "pnlUsdt": 10.535746282028404,
+        "timestamp": 1779822272091,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.05552,
+        "pnlPct": 2.0784805590395883,
+        "pnlUsdt": 7.274681956638559,
+        "timestamp": 1779822344350,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05563,
+        "pnlPct": 5.1603655258914065,
+        "pnlUsdt": 18.061279340619922,
+        "timestamp": 1779822468368,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 10.24905930836768,
+    "finalPnlUsdt": 35.871707579286884,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1118
+  },
+  {
+    "id": "1779824822353-k2njif",
+    "timestamp": 1779824822,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.005517,
+      "leverage": 7,
+      "riskLevel": "LOW",
+      "confidence": 61,
+      "channelWidth": 0.000014781818181818472,
+      "channelWidthPct": 0.002679321765781851,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.0000037857142857142924,
+      "atrPct": 0.0006861907351303774,
+      "slPrice": 0.005511321428571429,
+      "slDistancePct": 0.0010292861026955605,
+      "tp1Price": 0.005524390909090909,
+      "tp1DistancePct": 0.001339660882890847
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.005525,
+        "pnlPct": 0.7612833061446624,
+        "pnlUsdt": 2.6644915715063187,
+        "timestamp": 1779825027636,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.005517,
+        "pnlPct": 0,
+        "pnlUsdt": 0,
+        "timestamp": 1779826516980,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 0.7612833061446624,
+    "finalPnlUsdt": 2.6644915715063187,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1694
+  },
+  {
+    "id": "1779852967187-4k9sm3",
+    "timestamp": 1779852967,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.005522,
+      "leverage": 14,
+      "riskLevel": "VERY_LOW",
+      "confidence": 84,
+      "channelWidth": 0.000017045454545454482,
+      "channelWidthPct": 0.0030868262487241003,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.000004000000000000035,
+      "atrPct": 0.0007243752263672646,
+      "slPrice": 0.005516,
+      "slDistancePct": 0.0010865628395508745,
+      "tp1Price": 0.005530522727272728,
+      "tp1DistancePct": 0.0015434131243621287
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.005516,
+        "pnlPct": -1.5211879753712243,
+        "pnlUsdt": -5.324157913799285,
+        "timestamp": 1779853596951,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -1.5211879753712243,
+    "finalPnlUsdt": -5.324157913799285,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 629
+  },
+  {
+    "id": "1779865390955-svz0dx",
+    "timestamp": 1779865390,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.005546,
+      "leverage": 7,
+      "riskLevel": "LOW",
+      "confidence": 64,
+      "channelWidth": 0.000008660000000000612,
+      "channelWidthPct": 0.0015614857554995694,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.000002571428571428603,
+      "atrPct": 0.00046365462881871675,
+      "slPrice": 0.005542142857142857,
+      "slDistancePct": 0.0006954819432281142,
+      "tp1Price": 0.00555033,
+      "tp1DistancePct": 0.0007807428777497847
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.005542,
+        "pnlPct": -0.5048683736025541,
+        "pnlUsdt": -1.7670393076089392,
+        "timestamp": 1779865540583,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -0.5048683736025541,
+    "finalPnlUsdt": -1.7670393076089392,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 150
+  },
+  {
+    "id": "1779865623223-yezixa",
+    "timestamp": 1779865623,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.005544,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 74,
+      "channelWidth": 0.000008660000000000612,
+      "channelWidthPct": 0.0015620490620491723,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.0000030000000000001504,
+      "atrPct": 0.0005411255411255682,
+      "slPrice": 0.0055395,
+      "slDistancePct": 0.0008116883116883411,
+      "tp1Price": 0.005548330000000001,
+      "tp1DistancePct": 0.0007810245310245861
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.005538,
+        "pnlPct": -0.8658008658008556,
+        "pnlUsdt": -3.0303030303029943,
+        "timestamp": 1779865751121,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -0.8658008658008556,
+    "finalPnlUsdt": -3.0303030303029943,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 128
+  },
+  {
+    "id": "1779869285003-xcustg",
+    "timestamp": 1779869285,
+    "context": {
+      "symbol": "1000SHIB/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.005543,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 70,
+      "channelWidth": 0.000009760649087221622,
+      "channelWidthPct": 0.0017608964617033414,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00000328571428571435,
+      "atrPct": 0.000592768227623011,
+      "slPrice": 0.005538071428571429,
+      "slDistancePct": 0.0008891523414345166,
+      "tp1Price": 0.0055478803245436106,
+      "tp1DistancePct": 0.0008804482308515924
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.005538,
+        "pnlPct": -0.721630885801883,
+        "pnlUsdt": -2.5257081003065904,
+        "timestamp": 1779869626505,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -0.721630885801883,
+    "finalPnlUsdt": -2.5257081003065904,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 341
+  },
+  {
+    "id": "1779869425493-gt9uzu",
+    "timestamp": 1779869425,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05531,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 77,
+      "channelWidth": 0.00034767676767677447,
+      "channelWidthPct": 0.006285965786960305,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00007357142857142929,
+      "atrPct": 0.0013301650437792314,
+      "slPrice": 0.055148142857142854,
+      "slDistancePct": 0.0029263630963143037,
+      "tp1Price": 0.055483838383838385,
+      "tp1DistancePct": 0.0031429828934801526
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05549,
+        "pnlPct": 1.9526306273729845,
+        "pnlUsdt": 6.834207195805446,
+        "timestamp": 1779870368020,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05559,
+        "pnlPct": 1.0124751401193364,
+        "pnlUsdt": 3.5436629904176775,
+        "timestamp": 1779870454187,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.9651057674923207,
+    "finalPnlUsdt": 10.377870186223124,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1029
+  },
+  {
+    "id": "1780412954441-q0dh18",
+    "timestamp": 1780412954,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05117,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.0005428676470588187,
+      "channelWidthPct": 0.010609100001149476,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00012428571428571417,
+      "atrPct": 0.0024288785281554462,
+      "slPrice": 0.05144342857142857,
+      "slDistancePct": 0.005343532761941964,
+      "tp1Price": 0.050898566176470594,
+      "tp1DistancePct": 0.00530455000057467
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05084,
+        "pnlPct": 3.869454758647609,
+        "pnlUsdt": 13.54309165526663,
+        "timestamp": 1780413347931,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05076,
+        "pnlPct": 1.6025014657025622,
+        "pnlUsdt": 5.608755129958968,
+        "timestamp": 1780413391461,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 5.471956224350171,
+    "finalPnlUsdt": 19.1518467852256,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 437
+  },
+  {
+    "id": "1780417384698-tpxgag",
+    "timestamp": 1780417384,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05111,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.0007045864661654119,
+      "channelWidthPct": 0.013785687070346544,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.0001457142857142862,
+      "atrPct": 0.0028509936551415808,
+      "slPrice": 0.050789428571428576,
+      "slDistancePct": 0.006272186041311426,
+      "tp1Price": 0.05146229323308271,
+      "tp1DistancePct": 0.00689284353517334
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05078,
+        "pnlPct": -5.165329681080085,
+        "pnlUsdt": -18.078653883780294,
+        "timestamp": 1780419505384,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -5.165329681080085,
+    "finalPnlUsdt": -18.078653883780294,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 2121
+  },
+  {
+    "id": "1780417385539-wwmnth",
+    "timestamp": 1780417385,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0004831,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.000003580952380952411,
+      "channelWidthPct": 0.007412445416999402,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.0000014071428571428487,
+      "atrPct": 0.002912736197770335,
+      "slPrice": 0.0004800042857142857,
+      "slDistancePct": 0.006408019635094775,
+      "tp1Price": 0.0004848904761904762,
+      "tp1DistancePct": 0.003706222708499701
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0004798,
+        "pnlPct": -5.464707099979254,
+        "pnlUsdt": -19.126474849927387,
+        "timestamp": 1780419352577,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -5.464707099979254,
+    "finalPnlUsdt": -19.126474849927387,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 1967
+  },
+  {
+    "id": "1780454418359-yttsfj",
+    "timestamp": 1780454418,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0004723,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.000001918749999999989,
+      "channelWidthPct": 0.004062566165572706,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 6.357142857142857e-7,
+      "atrPct": 0.00134599679380539,
+      "slPrice": 0.00047369857142857144,
+      "slDistancePct": 0.0029611929463719154,
+      "tp1Price": 0.000471340625,
+      "tp1DistancePct": 0.002031283082786353
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0004713,
+        "pnlPct": 1.2703789964005552,
+        "pnlUsdt": 4.446326487401944,
+        "timestamp": 1780454687530,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.0004708,
+        "pnlPct": 0.6351894982002887,
+        "pnlUsdt": 2.2231632437010105,
+        "timestamp": 1780454797957,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.905568494600844,
+    "finalPnlUsdt": 6.669489731102955,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 379
+  },
+  {
+    "id": "1780467429303-7ti1c0",
+    "timestamp": 1780467429,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05125,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 76,
+      "channelWidth": 0.000421249999999998,
+      "channelWidthPct": 0.008219512195121913,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.000059285714285713604,
+      "atrPct": 0.0011567944250870947,
+      "slPrice": 0.051119571428571424,
+      "slDistancePct": 0.0025449477351916685,
+      "tp1Price": 0.051460624999999996,
+      "tp1DistancePct": 0.004109756097560957
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05153,
+        "pnlPct": 3.2780487804878335,
+        "pnlUsdt": 11.473170731707418,
+        "timestamp": 1780467549961,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.05157,
+        "pnlPct": 1.2487804878048814,
+        "pnlUsdt": 4.370731707317085,
+        "timestamp": 1780467673434,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 4.526829268292715,
+    "finalPnlUsdt": 15.843902439024504,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 244
+  },
+  {
+    "id": "1780471502565-n1in5c",
+    "timestamp": 1780471502,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05206,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.0004161904761904797,
+      "channelWidthPct": 0.007994438651373026,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00009428571428571392,
+      "atrPct": 0.0018110970857801367,
+      "slPrice": 0.05185257142857143,
+      "slDistancePct": 0.0039844135887163595,
+      "tp1Price": 0.05226809523809524,
+      "tp1DistancePct": 0.003997219325686446
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05185,
+        "pnlPct": -3.227045716481012,
+        "pnlUsdt": -11.294660007683541,
+        "timestamp": 1780472522103,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -3.227045716481012,
+    "finalPnlUsdt": -11.294660007683541,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 1020
+  },
+  {
+    "id": "1780475702940-2iqtoa",
+    "timestamp": 1780475702,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05185,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 86,
+      "channelWidth": 0.000215126262626264,
+      "channelWidthPct": 0.0041490118153570685,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00007000000000000112,
+      "atrPct": 0.0013500482160077362,
+      "slPrice": 0.051696,
+      "slDistancePct": 0.002970106075216998,
+      "tp1Price": 0.05195756313131313,
+      "tp1DistancePct": 0.0020745059076785343
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05169,
+        "pnlPct": -4.937319189971083,
+        "pnlUsdt": -17.28061716489879,
+        "timestamp": 1780478137206,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -4.937319189971083,
+    "finalPnlUsdt": -17.28061716489879,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 2435
+  },
+  {
+    "id": "1780481645192-2tcp2r",
+    "timestamp": 1780481645,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0005047,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 77,
+      "channelWidth": 0.0000022420000000000643,
+      "channelWidthPct": 0.004442242916584237,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.000001157142857142862,
+      "atrPct": 0.0022927340145489643,
+      "slPrice": 0.0005021542857142857,
+      "slDistancePct": 0.005044014832007727,
+      "tp1Price": 0.000505821,
+      "tp1DistancePct": 0.0022211214582922257
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0005059,
+        "pnlPct": 1.4265900534971618,
+        "pnlUsdt": 4.993065187240067,
+        "timestamp": 1780481781897,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.0005064,
+        "pnlPct": 0.6736675252625272,
+        "pnlUsdt": 2.357836338418845,
+        "timestamp": 1780481816866,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.100257578759689,
+    "finalPnlUsdt": 7.350901525658912,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 171
+  },
+  {
+    "id": "1780484912391-l2bcij",
+    "timestamp": 1780484912,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05251,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.0003228571428571386,
+      "channelWidthPct": 0.00614848872323631,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00007928571428571379,
+      "atrPct": 0.0015099164784938828,
+      "slPrice": 0.05233557142857143,
+      "slDistancePct": 0.003321816252686506,
+      "tp1Price": 0.05267142857142857,
+      "tp1DistancePct": 0.003074244361618155
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.05269,
+        "pnlPct": 2.0567510950295134,
+        "pnlUsdt": 7.198628832603297,
+        "timestamp": 1780485297739,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05251,
+        "pnlPct": 0,
+        "pnlUsdt": 0,
+        "timestamp": 1780486399741,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.0567510950295134,
+    "finalPnlUsdt": 7.198628832603297,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1487
+  },
+  {
+    "id": "1780493764300-8iayzv",
+    "timestamp": 1780493764,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0005031,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.000004443684210526369,
+      "channelWidthPct": 0.00883260626222693,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.0000012642857142857101,
+      "atrPct": 0.0025129908850839,
+      "slPrice": 0.0005003185714285715,
+      "slDistancePct": 0.005528579947184553,
+      "tp1Price": 0.0005053218421052632,
+      "tp1DistancePct": 0.004416303131113465
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0005055,
+        "pnlPct": 2.862254025044663,
+        "pnlUsdt": 10.01788908765632,
+        "timestamp": 1780494680297,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.0005065,
+        "pnlPct": 1.3516199562711086,
+        "pnlUsdt": 4.73066984694888,
+        "timestamp": 1780494831373,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 4.213873981315771,
+    "finalPnlUsdt": 14.7485589346052,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1067
+  },
+  {
+    "id": "1780495266616-b15e0a",
+    "timestamp": 1780495266,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.05257,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 76,
+      "channelWidth": 0.00019074999999999648,
+      "channelWidthPct": 0.0036284953395472035,
+      "macroTrend": "BULLISH",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 0.00010714285714285723,
+      "atrPct": 0.0020380988613821044,
+      "slPrice": 0.052334285714285715,
+      "slDistancePct": 0.004483817495040585,
+      "tp1Price": 0.052665375,
+      "tp1DistancePct": 0.0018142476697736677
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05232,
+        "pnlPct": -7.608902415826524,
+        "pnlUsdt": -26.631158455392836,
+        "timestamp": 1780495546339,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -7.608902415826524,
+    "finalPnlUsdt": -26.631158455392836,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 280
+  },
+  {
+    "id": "1780506801226-4njj82",
+    "timestamp": 1780506801,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05087,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 77,
+      "channelWidth": 0.0003837878787878793,
+      "channelWidthPct": 0.0075444835617825695,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00008857142857142893,
+      "atrPct": 0.0017411328596703152,
+      "slPrice": 0.05106485714285714,
+      "slDistancePct": 0.0038304922912746698,
+      "tp1Price": 0.05067810606060606,
+      "tp1DistancePct": 0.0037722417808912162
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.05108,
+        "pnlPct": -3.302535875761775,
+        "pnlUsdt": -11.558875565166213,
+        "timestamp": 1780507159176,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -3.302535875761775,
+    "finalPnlUsdt": -11.558875565166213,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 358
+  },
+  {
+    "id": "1780517187069-bp2766",
+    "timestamp": 1780517187,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0004844,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 78,
+      "channelWidth": 0.0000048749999999999965,
+      "channelWidthPct": 0.010063996696944666,
+      "macroTrend": "SIDEWAYS_CONTRACTING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.0000012928571428571473,
+      "atrPct": 0.002668986669812443,
+      "slPrice": 0.00048724428571428574,
+      "slDistancePct": 0.005871770673587383,
+      "tp1Price": 0.0004819625,
+      "tp1DistancePct": 0.005031998348472333
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0004875,
+        "pnlPct": -5.119735755573851,
+        "pnlUsdt": -17.91907514450848,
+        "timestamp": 1780517451947,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -5.119735755573851,
+    "finalPnlUsdt": -17.91907514450848,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 264
+  },
+  {
+    "id": "1780520584295-6sl1fe",
+    "timestamp": 1780520584,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.05012,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 86,
+      "channelWidth": 0.0006139999999999965,
+      "channelWidthPct": 0.012250598563447656,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00016428571428571404,
+      "atrPct": 0.003277847451829889,
+      "slPrice": 0.050481428571428566,
+      "slDistancePct": 0.0072112643940257,
+      "tp1Price": 0.049812999999999996,
+      "tp1DistancePct": 0.0061252992817238975
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0505,
+        "pnlPct": -12.130885873902804,
+        "pnlUsdt": -42.458100558659815,
+        "timestamp": 1780520842030,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -12.130885873902804,
+    "finalPnlUsdt": -42.458100558659815,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 258
+  },
+  {
+    "id": "1780535118247-h2xgkq",
+    "timestamp": 1780535118,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.04942,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 77,
+      "channelWidth": 0.0005878787878787831,
+      "channelWidthPct": 0.011895564303496217,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00018071428571428652,
+      "atrPct": 0.0036567034745909857,
+      "slPrice": 0.049817571428571426,
+      "slDistancePct": 0.008044747644100115,
+      "tp1Price": 0.049126060606060604,
+      "tp1DistancePct": 0.005947782151748179
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.04911,
+        "pnlPct": 3.7636584378793745,
+        "pnlUsdt": 13.172804532577812,
+        "timestamp": 1780535342820,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.04897,
+        "pnlPct": 1.8211250505868026,
+        "pnlUsdt": 6.373937677053809,
+        "timestamp": 1780535355129,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 5.584783488466178,
+    "finalPnlUsdt": 19.54674220963162,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 237
+  },
+  {
+    "id": "1780546696855-f92z61",
+    "timestamp": 1780546696,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "long",
+      "entryPrice": 0.0004626,
+      "leverage": 8,
+      "riskLevel": "LOW",
+      "confidence": 75,
+      "channelWidth": 0.0000031449999999999707,
+      "channelWidthPct": 0.006798530047557222,
+      "macroTrend": "SIDEWAYS_EXPANDING",
+      "structuralTrend": "BULLISH",
+      "tradingTrend": "BULLISH",
+      "atr": 9.57142857142861e-7,
+      "atrPct": 0.002069050707183011,
+      "slPrice": 0.0004604942857142857,
+      "slDistancePct": 0.00455191155580266,
+      "tp1Price": 0.0004641725,
+      "tp1DistancePct": 0.003399265023778611
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0004604,
+        "pnlPct": -3.8045827929096396,
+        "pnlUsdt": -13.316039775183738,
+        "timestamp": 1780547522925,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -3.8045827929096396,
+    "finalPnlUsdt": -13.316039775183738,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 826
+  },
+  {
+    "id": "1780548913499-17li1h",
+    "timestamp": 1780548913,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0004575,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 76,
+      "channelWidth": 0.000001790000000000049,
+      "channelWidthPct": 0.003912568306011036,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 8.499999999999975e-7,
+      "atrPct": 0.001857923497267754,
+      "slPrice": 0.00045937,
+      "slDistancePct": 0.004087431693989087,
+      "tp1Price": 0.000456605,
+      "tp1DistancePct": 0.0019562841530054585
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0004566,
+        "pnlPct": 0.5901639344262438,
+        "pnlUsdt": 2.0655737704918535,
+        "timestamp": 1780548956844,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.0004561,
+        "pnlPct": 0.459016393442634,
+        "pnlUsdt": 1.606557377049219,
+        "timestamp": 1780549034642,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.0004554,
+        "pnlPct": 0.6885245901639334,
+        "pnlUsdt": 2.409836065573767,
+        "timestamp": 1780549052220,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 1.7377049180328112,
+    "finalPnlUsdt": 6.08196721311484,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 139
+  },
+  {
+    "id": "1780549204164-dmbmcm",
+    "timestamp": 1780549204,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0004563,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.0000021300000000000355,
+      "channelWidthPct": 0.0046679815910585926,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 8.142857142857147e-7,
+      "atrPct": 0.0017845402460787087,
+      "slPrice": 0.00045809142857142855,
+      "slDistancePct": 0.003925988541373161,
+      "tp1Price": 0.00045523499999999996,
+      "tp1DistancePct": 0.0023339907955292963
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0004547,
+        "pnlPct": 1.051939513477965,
+        "pnlUsdt": 3.6817882971728775,
+        "timestamp": 1780549221778,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.0004547,
+        "pnlPct": 0.5259697567389825,
+        "pnlUsdt": 1.8408941485864387,
+        "timestamp": 1780549233791,
+        "fullyExited": false
+      },
+      {
+        "reason": "Full Take Profit (TP3) Hit!",
+        "price": 0.0004541,
+        "pnlPct": 0.7232084155161076,
+        "pnlUsdt": 2.5312294543063762,
+        "timestamp": 1780549263183,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 2.301117685733055,
+    "finalPnlUsdt": 8.053911900065692,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 59
+  },
+  {
+    "id": "1780549801925-r41pin",
+    "timestamp": 1780549801,
+    "context": {
+      "symbol": "BOME/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.0004489,
+      "leverage": 6,
+      "riskLevel": "VERY_LOW",
+      "confidence": 75,
+      "channelWidth": 0.000004564999999999994,
+      "channelWidthPct": 0.010169302740031175,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.0000013714285714285621,
+      "atrPct": 0.0030550870381567436,
+      "slPrice": 0.00045191714285714287,
+      "slDistancePct": 0.006721191483944868,
+      "tp1Price": 0.0004466175,
+      "tp1DistancePct": 0.0050846513700155875
+    },
+    "exits": [
+      {
+        "reason": "Partial Take Profit (TP1) Hit!",
+        "price": 0.0004466,
+        "pnlPct": 1.537090666072623,
+        "pnlUsdt": 5.379817331254181,
+        "timestamp": 1780550452415,
+        "fullyExited": false
+      },
+      {
+        "reason": "Partial Take Profit (TP2) Hit!",
+        "price": 0.0004453,
+        "pnlPct": 1.202940521274237,
+        "pnlUsdt": 4.21029182445983,
+        "timestamp": 1780551052498,
+        "fullyExited": false
+      },
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.0004467,
+        "pnlPct": 2.9405212742258846,
+        "pnlUsdt": 10.291824459790595,
+        "timestamp": 1780551109136,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": 5.680552461572745,
+    "finalPnlUsdt": 19.881933615504607,
+    "outcome": "WIN",
+    "closed": true,
+    "durationSeconds": 1308
+  },
+  {
+    "id": "1780551302325-15wtl1",
+    "timestamp": 1780551302,
+    "context": {
+      "symbol": "POPCAT/USDT:USDT",
+      "side": "short",
+      "entryPrice": 0.04701,
+      "leverage": 16,
+      "riskLevel": "VERY_LOW",
+      "confidence": 83,
+      "channelWidth": 0.0004398214285714283,
+      "channelWidthPct": 0.009355912115963162,
+      "macroTrend": "BEARISH",
+      "structuralTrend": "BEARISH",
+      "tradingTrend": "BEARISH",
+      "atr": 0.00010571428571428537,
+      "atrPct": 0.0022487616616525285,
+      "slPrice": 0.04724257142857143,
+      "slDistancePct": 0.004947275655635592,
+      "tp1Price": 0.04679008928571429,
+      "tp1DistancePct": 0.004677956057981507
+    },
+    "exits": [
+      {
+        "reason": "Stop Loss Triggered",
+        "price": 0.04726,
+        "pnlPct": -8.508827908955547,
+        "pnlUsdt": -29.780897681344417,
+        "timestamp": 1780551666699,
+        "fullyExited": true
+      }
+    ],
+    "finalPnlPct": -8.508827908955547,
+    "finalPnlUsdt": -29.780897681344417,
+    "outcome": "LOSS",
+    "closed": true,
+    "durationSeconds": 364
+  }
+]

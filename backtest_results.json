@@ -1,0 +1,69 @@
+{
+  "timestamp": "2025-12-31T09:58:31.200Z",
+  "bullish": {
+    "totalTrades": 0,
+    "winningTrades": 0,
+    "losingTrades": 0,
+    "winRate": 0,
+    "totalPnL": 0,
+    "maxDrawdown": 0,
+    "averageWin": 0,
+    "averageLoss": 0,
+    "profitFactor": 999,
+    "trades": []
+  },
+  "bearish": {
+    "totalTrades": 0,
+    "winningTrades": 0,
+    "losingTrades": 0,
+    "winRate": 0,
+    "totalPnL": 0,
+    "maxDrawdown": 0,
+    "averageWin": 0,
+    "averageLoss": 0,
+    "profitFactor": 999,
+    "trades": []
+  },
+  "sideways": {
+    "totalTrades": 1,
+    "winningTrades": 1,
+    "losingTrades": 0,
+    "winRate": 100,
+    "totalPnL": 3.9504832156094762,
+    "maxDrawdown": 0.22195456131097846,
+    "averageWin": 3.9504832156094762,
+    "averageLoss": 0,
+    "profitFactor": 999,
+    "trades": [
+      {
+        "id": "TRADE-1",
+        "type": "LONG",
+        "entryPrice": 49941.359907962265,
+        "stopLoss": 49805.87646372873,
+        "targets": [
+          {
+            "price": 50084.874778393525,
+            "percentage": 50
+          },
+          {
+            "price": 50156.63221360915,
+            "percentage": 25
+          },
+          {
+            "price": 50228.38964882478,
+            "percentage": 25
+          }
+        ],
+        "size": 360,
+        "leverage": 14,
+        "status": "CLOSED",
+        "openedAt": 1767164431186,
+        "exitPrice": 50030.44660598156,
+        "exitReason": "END_OF_BACKTEST",
+        "closedAt": 1767175051186,
+        "pnl": 3.9504832156094762,
+        "roe": 1.0973564487804102
+      }
+    ]
+  }
+}
